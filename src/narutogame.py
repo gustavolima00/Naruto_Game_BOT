@@ -178,6 +178,35 @@ class Ninja(Browser):
         else:
             return NOT_YET
 
+    def get_story_mod(self):
+        N_PAGES = 4
+        self.get_page(HISTORY_MODE_URL)
+        body = self.driver.find_element_by_id(RIGHT_ID)
+        b_tab = body.find_element_by_id(BUTTONS_TAB_ID)
+        options = b_tab.find_elements_by_css_selector(BUTTON_CSS)
+        contents = [HM_BATTLE_PAGE1_ID, HM_BATTLE_PAGE2_ID, HM_BATTLE_PAGE3_ID, HM_BATTLE_PAGE4_ID]
+        for i in range(N_PAGES):
+            options[i].click()
+            content = body.find_element_by_id(contents[i])
+            done_chs = content.find_elements_by_css_selector(COMPLETE_HISTORY_CSS)
+            chs = content.find_elements_by_css_selector(HISTORY_CSS)
+            for chapter in chs:
+                if chapter not in done_chs:
+                    exp = chapter.find_element_by_css_selector(EXPAND_BUTTON_CSS)
+                    exp.click()
+                    history = content.find_element_by_css_selector(HISTORY_EXPANDED_CSS)
+                    buttons = history.find_elements_by_css_selector(BUTTON_CSS)
+                    for button in buttons:
+                        if button.text == 'Duelar':
+                            button.click()
+                            return True
+                    raise NinjaError('Não foi possível batalhar no modo história')
+        raise NinjaError('O usuário já completou o modo história')
+            
+
+
+
+
     def figth(self, blows):
         self.get_page(DOJO_FIGHT_URL)
         body = self.driver.find_element_by_id(PAGE_BODY_ID)
