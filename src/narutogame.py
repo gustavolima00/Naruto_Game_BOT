@@ -142,12 +142,12 @@ class Ninja(Browser):
         body = self.driver.find_element_by_id(PAGE_BODY_ID)
         left = body.find_element_by_css_selector(BATTLE_LEFT_CSS)
         right = body.find_element_by_css_selector(BATTLE_RIGHT_CSS)
-        lhea = left.find_element_by_id(HEART_BATTLE_ID)
-        rhea = right.find_element_by_id(HEART_BATTLE_ID)
-        lcha = left.find_element_by_id(CHAKRA_BATTLE_ID)
-        rcha = right.find_element_by_id(CHAKRA_BATTLE_ID)
-        lsta = left.find_element_by_id(STAMINA_BATTLE_ID)
-        rsta = right.find_element_by_id(STAMINA_BATTLE_ID)
+        lhea = left.find_element_by_id(PLAYER_HEART_ID)
+        rhea = right.find_element_by_id(ENEMY_HEART_ID)
+        lcha = left.find_element_by_id(PLAYER_CHAKRA_ID)
+        rcha = right.find_element_by_id(ENEMY_CHAKRA_ID)
+        lsta = left.find_element_by_id(PLAYER_STAMINA_ID)
+        rsta = right.find_element_by_id(ENEMY_STAMINA_ID)
         enemy = Ninja()
         enemy.name = right.find_element_by_css_selector(NAME_BATTLE_CSS).text
         enemy.current_life = int(rhea.text.split()[1])
@@ -188,19 +188,26 @@ class Ninja(Browser):
         i = 0
         while True:
             blow = blows[i%n]
+            i+=1
             win = self.get_winner(self, enemy)
             if win==NOT_YET:
                 self.print_status(self)
                 self.print_status(enemy)
                 button = att_list.find_element_by_id(blow)
                 button.click()
+                body.click()
                 enemy = self.update_battle_status()
                 sleep(2)
             else:
-                sleep(3)
-                msg = body.find_element_by_id(BATTLE_MESSAGE_ID)
-                link = msg.find_element_by_css_selector(TEXT_LINK_CSS)
-                link.click()
+                for _ in range(3):
+                    try:
+                        msg = body.find_element_by_id(BATTLE_MESSAGE_ID)
+                        link = msg.find_element_by_css_selector(TEXT_LINK_CSS)
+                        link.click()
+                        break
+                    except:
+                        print('Esperando mensagem para finalizar...')
+                        sleep(3)
                 if win==DRAW:
                     print('Empate')
                     return False
