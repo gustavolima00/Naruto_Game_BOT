@@ -1,5 +1,6 @@
 from selenium import webdriver
-from constants import HOME_URL
+from constants import url
+from constants import skill
 from narutogame import Browser
 from narutogame import BrowserError
 from narutogame import Ninja
@@ -21,9 +22,17 @@ def get_accounts():
 
 def make_browser():
     driver = webdriver.Chrome('./chromedriver')
-    driver.get(HOME_URL)
+    driver.get(url.HOME)
     return Browser(driver)
 
+def play_story_mode(browser):
+    ninjas = browser.get_ninjas()
+    blows = [skill.PUNCH, skill.KICK, skill.HAND_DEFEND, skill.ACROBACY]
+    for ninja in ninjas:
+        ninja.select()
+        ninja.get_story_mod()
+        ninja.figth(blows)
+        
 def make_tasks(browser, times=3):
     tmp = browser.get_ninjas()
     dct = {}

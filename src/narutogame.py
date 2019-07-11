@@ -1,5 +1,8 @@
 from selenium import webdriver
-from constants import *
+from constants import id_
+from constants import url
+from constants import css
+from constants import skill
 from selenium.webdriver.support.ui import Select
 import datetime
 from time import sleep
@@ -33,17 +36,17 @@ class Browser:
         raise BrowserError('Erro ao acessar {}'.format(url))
 
     def login(self, email, password):
-        self.get_page(HOME_URL)
-        header = self.driver.find_element_by_id(FORMULARIO_ID)
-        email_box = header.find_element_by_id(EMAIL_ID)
-        password_box = header.find_element_by_id(PASSWORD_ID)
+        self.get_page(url.HOME)
+        header = self.driver.find_element_by_id(id_.FORMULARIO)
+        email_box = header.find_element_by_id(id_.EMAIL)
+        password_box = header.find_element_by_id(id_.PASSWORD)
         email_box.send_keys(email)
         password_box.send_keys(password)
 
     def get_ninjas(self):
-        self.get_page(NINJA_SELECT_URL)
-        body = self.driver.find_element_by_id(RIGHT_ID)
-        ninjas_imgs =  body.find_elements_by_css_selector(NINJA_SELECT_IMAGE_CSS)
+        self.get_page(url.NINJA_SELECT)
+        body = self.driver.find_element_by_id(id_.RIGHT)
+        ninjas_imgs =  body.find_elements_by_css_selector(css.NINJA_SELECT_IMAGE)
         self.ninjas = []
         for button in ninjas_imgs:
             button.click()
@@ -51,9 +54,9 @@ class Browser:
         return self.ninjas
     
     def select_ninja(self, ninja_name):
-        self.get_page(NINJA_SELECT_URL)
-        body = self.driver.find_element_by_id(RIGHT_ID)
-        ninjas_imgs =  body.find_elements_by_css_selector(NINJA_SELECT_IMAGE_CSS)
+        self.get_page(url.NINJA_SELECT)
+        body = self.driver.find_element_by_id(id_.RIGHT)
+        ninjas_imgs =  body.find_elements_by_css_selector(css.NINJA_SELECT_IMAGE)
         for button in ninjas_imgs:
             button.click()
             ninja = Ninja(body)
@@ -65,8 +68,8 @@ class Browser:
 
     def close_pop_up(self):
         try:
-            pop_up = self.driver.find_element_by_css_selector(POP_UP_CSS)
-            close_button = pop_up.find_element_by_css_selector(BUTTON_CSS+CLOSE_CSS)
+            pop_up = self.driver.find_element_by_css_selector(POP_UP)
+            close_button = pop_up.find_element_by_css_selector(BUTTON+CLOSE)
             close_button.click()
         except:
             raise BrowserError('Erro ao fechar pop-up')
@@ -78,34 +81,34 @@ class Ninja(Browser):
     def __init__(self, driver=None):
         if(driver):
             self.driver = driver
-            self.name = self.driver.find_element_by_id(NINJA_NAME_ID).text
-            self.level = self.driver.find_element_by_id(NINJA_LEVEL_ID).text
-            self.ryous = self.driver.find_element_by_id(NINJA_RYOUS_ID).text
+            self.name = self.driver.find_element_by_id(id_.NINJA_NAME).text
+            self.level = self.driver.find_element_by_id(id_.NINJA_LEVEL).text
+            self.ryous = self.driver.find_element_by_id(id_.NINJA_RYOUS).text
     
     def select(self):
         self.select_ninja(self.name)
 
     def update_status(self, mode='Normal'):
         if mode=='Normal':
-            self.get_page(NINJA_STATUS_URL)
-            body_left = self.driver.find_element_by_id(LEFT_ID)
-            ninja_name = body_left.find_element_by_css_selector(NAME_CSS).text
+            self.get_page(url.NINJA_STATUS)
+            body_left = self.driver.find_element_by_id(id_.LEFT)
+            ninja_name = body_left.find_element_by_css_selector(css.NAME).text
             if ninja_name!= self.name:
                 raise NinjaError('O ninja {} não corresponde ao ninja esperado'.format(ninja_name))
         try:
-            header = self.driver.find_element_by_id(STATUS_ICONS_ID)
-            self.current_life, self.max_life = map(int, header.find_element_by_id(HEART_ICON_ID).text.split('/'))
-            self.current_chakra, self.max_chakra = map(int, header.find_element_by_id(CHAKRA_ICON_ID).text.split('/'))
-            self.current_stamina, self.max_stamina = map(int, header.find_element_by_id(STAMINA_ICON_ID).text.split('/'))
+            header = self.driver.find_element_by_id(STATUS_ICONS)
+            self.current_life, self.max_life = map(int, header.find_element_by_id(HEART_ICON).text.split('/'))
+            self.current_chakra, self.max_chakra = map(int, header.find_element_by_id(CHAKRA_ICON).text.split('/'))
+            self.current_stamina, self.max_stamina = map(int, header.find_element_by_id(STAMINA_ICON).text.split('/'))
             return True
         except:
             return False
 
     def training_attributes(self, num):
-        self.get_page(TRAINING_ATTRIBUTES_URL)
+        self.get_page(url.TRAINING_ATTRIBUTES)
         self.close_pop_up()
-        body = self.driver.find_element_by_id(PAGE_BODY_ID)
-        select = Select(body.find_element_by_id(QUANTITY_ID))
+        body = self.driver.find_element_by_id(id_.PAGE_BODY)
+        select = Select(body.find_element_by_id(id_.QUANTITY))
         option = select.options[0]
         diff = abs(int(option.text)-num)
         for op in select.options:
@@ -118,10 +121,10 @@ class Ninja(Browser):
         button.click()
 
     def make_task(self):
-        self.get_page(TASK_URL)
-        body = self.driver.find_element_by_id(RIGHT_ID)
-        buttons = body.find_elements_by_css_selector(BUTTON_CSS)
-        disabled_buttons = body.find_elements_by_css_selector(BUTTON_CSS+DISABLED_CSS)
+        self.get_page(url.TASK)
+        body = self.driver.find_element_by_id(id_.RIGHT)
+        buttons = body.find_elements_by_css_selector(css.BUTTON)
+        disabled_buttons = body.find_elements_by_css_selector(css.BUTTON+css.DISABLED)
         for button in buttons:
             if not button in disabled_buttons:
                 button.click()
@@ -129,27 +132,27 @@ class Ninja(Browser):
         raise NinjaError('Nenhuma tarefa foi encontrada')
     
     def get_mission(self):
-        self.get_page(MISSION_STATUS_URL)
-        body = self.driver.find_element_by_id(RIGHT_ID)
+        self.get_page(url.MISSION_STATUS)
+        body = self.driver.find_element_by_id(id_.RIGHT)
         try:
             body.find_element_by_link_text('Missão Concluída')
         except:
             NinjaError('Missão não foi concluída ou ninja não está em missão')
-        button = body.find_element_by_css_selector(BUTTON_CSS)   
+        button = body.find_element_by_css_selector(css.BUTTON)   
         button.click()
 
     def update_battle_status(self):
-        body = self.driver.find_element_by_id(PAGE_BODY_ID)
-        left = body.find_element_by_css_selector(BATTLE_LEFT_CSS)
-        right = body.find_element_by_css_selector(BATTLE_RIGHT_CSS)
-        lhea = left.find_element_by_id(PLAYER_HEART_ID)
-        rhea = right.find_element_by_id(ENEMY_HEART_ID)
-        lcha = left.find_element_by_id(PLAYER_CHAKRA_ID)
-        rcha = right.find_element_by_id(ENEMY_CHAKRA_ID)
-        lsta = left.find_element_by_id(PLAYER_STAMINA_ID)
-        rsta = right.find_element_by_id(ENEMY_STAMINA_ID)
+        body = self.driver.find_element_by_id(id_.PAGE_BODY)
+        left = body.find_element_by_css_selector(css.BATTLE_LEFT)
+        right = body.find_element_by_css_selector(css.BATTLE_RIGHT)
+        lhea = left.find_element_by_id(id_.PLAYER_HEART)
+        rhea = right.find_element_by_id(id_.ENEMY_HEART)
+        lcha = left.find_element_by_id(id_.PLAYER_CHAKRA)
+        rcha = right.find_element_by_id(id_.ENEMY_CHAKRA)
+        lsta = left.find_element_by_id(id_.PLAYER_STAMINA)
+        rsta = right.find_element_by_id(id_.ENEMY_STAMINA)
         enemy = Ninja()
-        enemy.name = right.find_element_by_css_selector(NAME_BATTLE_CSS).text
+        enemy.name = right.find_element_by_css_selector(css.NAME_BATTLE).text
         enemy.current_life = int(rhea.text.split()[1])
         enemy.current_chakra = int(rcha.text.split()[1])
         enemy.current_stamina = int(rsta.text.split()[1])
@@ -180,22 +183,22 @@ class Ninja(Browser):
 
     def get_story_mod(self):
         N_PAGES = 4
-        self.get_page(HISTORY_MODE_URL)
-        body = self.driver.find_element_by_id(RIGHT_ID)
-        b_tab = body.find_element_by_id(BUTTONS_TAB_ID)
-        options = b_tab.find_elements_by_css_selector(BUTTON_CSS)
-        contents = [HM_BATTLE_PAGE1_ID, HM_BATTLE_PAGE2_ID, HM_BATTLE_PAGE3_ID, HM_BATTLE_PAGE4_ID]
+        self.get_page(url.HISTORY_MODE)
+        body = self.driver.find_element_by_id(id_.RIGHT)
+        b_tab = body.find_element_by_id(id_.BUTTONS_TAB)
+        options = b_tab.find_elements_by_css_selector(css.BUTTON)
+        contents = [id_.HM_BATTLE_PAGE1, id_.HM_BATTLE_PAGE2, id_.HM_BATTLE_PAGE3, id_.HM_BATTLE_PAGE4]
         for i in range(N_PAGES):
             options[i].click()
             content = body.find_element_by_id(contents[i])
-            done_chs = content.find_elements_by_css_selector(COMPLETE_HISTORY_CSS)
-            chs = content.find_elements_by_css_selector(HISTORY_CSS)
+            done_chs = content.find_elements_by_css_selector(css.COMPLETE_HISTORY)
+            chs = content.find_elements_by_css_selector(css.HISTORY)
             for chapter in chs:
                 if chapter not in done_chs:
-                    exp = chapter.find_element_by_css_selector(EXPAND_BUTTON_CSS)
+                    exp = chapter.find_element_by_css_selector(css.EXPAND_BUTTON)
                     exp.click()
-                    history = content.find_element_by_css_selector(HISTORY_EXPANDED_CSS)
-                    buttons = history.find_elements_by_css_selector(BUTTON_CSS)
+                    history = content.find_element_by_css_selector(css.HISTORY_EXPANDED)
+                    buttons = history.find_elements_by_css_selector(css.BUTTON)
                     for button in buttons:
                         if button.text == 'Duelar':
                             button.click()
@@ -208,10 +211,10 @@ class Ninja(Browser):
 
 
     def figth(self, blows):
-        self.get_page(DOJO_FIGHT_URL)
-        body = self.driver.find_element_by_id(PAGE_BODY_ID)
-        #options = body.find_elements_by_css_selector(BATTLE_OPTIONS_CSS)
-        att_list = body.find_element_by_id(SKILL_LIST_ID)
+        self.get_page(url.DOJO_FIGHT)
+        body = self.driver.find_element_by_id(id_.PAGE_BODY)
+        #options = body.find_elements_by_css_selector(BATTLE_OPTIONS)
+        att_list = body.find_element_by_id(id_.SKILL_LIST)
         enemy = self.update_battle_status()
         n = len(blows)
         i = 0
@@ -228,10 +231,11 @@ class Ninja(Browser):
                 enemy = self.update_battle_status()
                 sleep(2)
             else:
+                sleep(3)
                 for _ in range(3):
                     try:
-                        msg = body.find_element_by_id(BATTLE_MESSAGE_ID)
-                        link = msg.find_element_by_css_selector(TEXT_LINK_CSS)
+                        msg = body.find_element_by_id(BATTLE_MESSAGE)
+                        link = msg.find_element_by_css_selector(TEXT_LINK)
                         link.click()
                         break
                     except:
