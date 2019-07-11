@@ -1,20 +1,17 @@
 from selenium import webdriver
 from constants import *
 from narutogame import Browser
+from time import sleep
+from auto_play import *
 
-accounts = []
-try:
-    file = open('acc.txt')
-    lines = file.readlines()
-    for line in lines:
-        email, senha = line.split()
-        accounts.append([email, senha])
-except:
-    pass
+accounts = get_accounts()
+b1 = make_browser()
 
+b1.login(*accounts[0])
+input('Escreva o captcha, logue e aperte enter...')
 
-driver = webdriver.Chrome('./chromedriver')
-driver.get(HOME_URL)
+make_tasks(b1, 50)
+ninja = b1.get_ninjas()[1]
+blows = [PUNCH, KICK, HAND_DEFEND, ACROBACY]
 
-b1 = Browser(driver)
-b1.login(accounts[0][0], accounts[0][1])
+ninja.figth(blows)
