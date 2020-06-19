@@ -7,11 +7,13 @@ from narutogame import Ninja
 from narutogame import NinjaError
 from narutogame import get_time
 from time import sleep
+import logging
+import requestbot as rb
 
 def get_accounts():
     accounts = []
     try:
-        file = open('acc.txt')
+        file = open('key')
         lines = file.readlines()
         for line in lines:
             email, senha = line.split()
@@ -21,17 +23,42 @@ def get_accounts():
     return accounts
 
 def make_browser():
-    driver = webdriver.Chrome('./chromedriver')
+    driver = webdriver.Firefox(executable_path='./geckodriver')
     driver.get(url.HOME)
     return Browser(driver)
+
+def make_session():
+    return rb.start_session()
+
+def request_bot(email, password, train=True, train_first_jutsu=True, do_first_task=True, do_first_mission=True):
+    session = rb.start_session()
+    rb.dowload_captcha(session)
+    rb.show_image('captcha.png')
+    captcha = input('Insira o captcha e aperte enter...')
+    rb.login(session, email, password, captcha)
+    characters = rb.get_characters(session)
+    for c in characters:
+        rb.select_character(session, c)
+        rb.finish_mission(session)
+        if train:
+            rb.train(session)
+        if train_first_jutsu:
+            rb.train_first_jutsu(session)
+        if do_first_task:
+            rb.do_first_task(session)
+        if do_first_mission:
+            rb.do_first_mission(session)
 
 def play_story_mode(browser):
     ninjas = browser.get_ninjas()
     blows = [skill.PUNCH, skill.KICK, skill.HAND_DEFEND, skill.ACROBACY]
     for ninja in ninjas:
-        ninja.select()
-        ninja.get_story_mod()
-        ninja.figth(blows)
+        try:
+            ninja.select()
+            ninja.get_story_mod()
+            ninja.figth(blows)
+        except:
+            logging.exception('play_story_mode error')
         
 def make_tasks(browser, times=3):
     tmp = browser.get_ninjas()
@@ -49,7 +76,6 @@ def make_tasks(browser, times=3):
             print('NijaError: {}'.format(err))
         except BrowserError as err:
             print('BrowserError: {}'.format(err))
-
         try:
             time = ninja.make_task()
             dct[ninja] = time
@@ -57,3 +83,4 @@ def make_tasks(browser, times=3):
             print('NijaError: {}'.format(err))
         except BrowserError as err:
             print('BrowserError: {}'.format(err))
+

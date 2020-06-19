@@ -47,6 +47,10 @@ class skill():
     #Tai skills - ID
     DYNAMIC_KICK = 'atki-709'
 
+    # Nin skills - ID
+    KONOHA_TSU = 'atki-21621'
+    HENGE = 'atki-21619'
+
 class css():
     NINJA_SELECT_IMAGE = '.d-img-p.char-page.char-page-1'
     NAME = '.name'

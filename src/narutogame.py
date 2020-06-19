@@ -205,11 +205,7 @@ class Ninja(Browser):
                             return True
                     raise NinjaError('Não foi possível batalhar no modo história')
         raise NinjaError('O usuário já completou o modo história')
-            
-
-
-
-
+        
     def figth(self, blows):
         self.get_page(url.DOJO_FIGHT)
         body = self.driver.find_element_by_id(id_.PAGE_BODY)
@@ -223,13 +219,16 @@ class Ninja(Browser):
             i+=1
             win = self.get_winner(self, enemy)
             if win==NOT_YET:
-                self.print_status(self)
-                self.print_status(enemy)
-                button = att_list.find_element_by_id(blow)
-                button.click()
-                body.click()
-                enemy = self.update_battle_status()
-                sleep(2)
+                try:
+                    self.print_status(self)
+                    self.print_status(enemy)
+                    button = att_list.find_element_by_id(blow)
+                    button.click()
+                    body.click()
+                    enemy = self.update_battle_status()
+                    sleep(2)
+                except:
+                    print('Erro ao atacar')
             else:
                 sleep(3)
                 for _ in range(3):
