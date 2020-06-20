@@ -1,0 +1,882 @@
+1592497455699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLMZwwO"
+1592497456689	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592497457116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592497457117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592497457118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592497457119	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592497459847	Marionette	INFO	Listening on port 43601
+1592497459918	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592497482562	Marionette	INFO	Stopped listening on port 43601
+1592497482734	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezqn0rY"
+1592497483121	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592497483536	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592497483536	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592497483537	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592497483537	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592497485888	Marionette	INFO	Listening on port 41439
+1592497485945	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://www.gstatic.com/mysidia/5685a44b5fb4302ac09e61f8a4b58e9d.js?tag=video_mra/web_fig_och, line 174: SecurityError: The operation is insecure.
+1592497661776	Marionette	INFO	Stopped listening on port 41439
+1592498062992	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePu1Q68"
+1592498063266	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592498063637	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592498063638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592498063638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592498063638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592498065217	Marionette	INFO	Listening on port 35519
+1592498065301	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1592498259996	Marionette	INFO	Stopped listening on port 35519
+1592502348824	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZBQ4Qd"
+1592502349308	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592502349727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592502349727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592502349727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592502349727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592502352586	Marionette	INFO	Listening on port 46187
+1592502352637	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 94: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1592502355110	Marionette	INFO	Stopped listening on port 46187
+1592502411914	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWg4a4y"
+1592502412279	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592502413117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592502413117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592502413117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592502413117	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592502415042	Marionette	INFO	Listening on port 45777
+1592502415127	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592503109614	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoW672p"
+1592503110020	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592503110412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592503110412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592503110412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592503110412	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592503112671	Marionette	INFO	Listening on port 35803
+1592503112727	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+Handler function threw an exception: TypeError: this._progressListener is null
+Stack: _onDocShellCreated/<@resource://devtools/server/actors/targets/browsing-context.js:782:18
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:111:22
+Line: 782, column: 18
+console.error: (new TypeError("this._progressListener is null", "resource://devtools/server/actors/targets/browsing-context.js", 782))
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+1592504118730	Marionette	INFO	Stopped listening on port 35803
+1592504124837	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile949Kjl"
+1592504125706	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592504126376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592504126377	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592504126377	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592504126377	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592504129696	Marionette	INFO	Listening on port 37079
+1592504129770	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592504143891	Marionette	INFO	Stopped listening on port 37079
+1592526516002	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehKVB2q"
+1592526516428	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592526516897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592526516897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592526516898	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592526516898	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592526520117	Marionette	INFO	Listening on port 33595
+1592526520223	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Exiting due to channel error.
+1592526541838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUj5hMA"
+1592526542824	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592526543728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592526543729	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592526543729	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592526543729	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592526547248	Marionette	INFO	Listening on port 35959
+1592526547281	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+Exiting due to channel error.
+1592526568000	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7Hey7j"
+1592526568932	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592526570248	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592526570248	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592526570249	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592526570249	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592526575893	Marionette	INFO	Listening on port 45041
+1592526575963	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592526693687	Marionette	INFO	Stopped listening on port 45041
+1592526819112	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexnhjAR"
+1592526820087	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592526821317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592526821317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592526821317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592526821317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592526825683	Marionette	INFO	Listening on port 34203
+1592526825756	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1592526900761	Marionette	INFO	Stopped listening on port 34203
+1592529390707	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBHoBTD"
+1592529391001	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592529391270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592529391270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592529391270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592529391270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592529393054	Marionette	INFO	Listening on port 39511
+1592529393117	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592529658302	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileS2rOCL"
+1592529658593	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592529658918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592529658918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592529658918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592529658918	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592529660512	Marionette	INFO	Listening on port 38203
+1592529660612	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592529663316	Marionette	INFO	Stopped listening on port 38203
+1592529763924	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKL1Ceq"
+1592529764229	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592529764572	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592529764572	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592529764572	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592529764572	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592529766185	Marionette	INFO	Listening on port 37087
+1592529766240	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 48: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/styles.js:587:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: (new Error("Protocol error (unknownError): node is null from: server0.conn1.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20200608_RC00/outstream.min.js, line 433: SecurityError: The operation is insecure.
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+console.error: "Task cancelled"
+console.error: "Error sending event: serverWebSocketClosed"
+console.error: (new Error("undefined passed where a value is required", "resource://devtools/shared/protocol/types.js", 115))
+Error: undefined passed where a value is required: identityWrite@resource://devtools/shared/protocol/types.js:115:11
+write@resource://devtools/shared/protocol/Request.js:117:22
+write@resource://devtools/shared/protocol/Request.js:43:26
+_sendEvent@resource://devtools/shared/protocol/Actor.js:66:24
+initialize/<@resource://devtools/shared/protocol/Actor.js:46:16
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+webSocketClosed@resource://devtools/server/actors/network-monitor/websocket-actor.js:96:10
+
+console.error: "Error sending event: serverWebSocketClosed"
+console.error: (new Error("undefined passed where a value is required", "resource://devtools/shared/protocol/types.js", 115))
+Error: undefined passed where a value is required: identityWrite@resource://devtools/shared/protocol/types.js:115:11
+write@resource://devtools/shared/protocol/Request.js:117:22
+write@resource://devtools/shared/protocol/Request.js:43:26
+_sendEvent@resource://devtools/shared/protocol/Actor.js:66:24
+initialize/<@resource://devtools/shared/protocol/Actor.js:46:16
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+webSocketClosed@resource://devtools/server/actors/network-monitor/websocket-actor.js:96:10
+
+console.error: "Task cancelled"
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: "Task cancelled"
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592532363621	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMrckFP"
+1592532363910	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592532364233	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592532364233	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592532364233	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592532364234	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592532366541	Marionette	INFO	Listening on port 36147
+1592532366931	Marionette	INFO	Stopped listening on port 36147
+Gdk-Message: 23:08:56.781: /usr/lib/firefox/firefox: Fatal IO error 11 (Recurso temporariamente indisponível) on X server :0.
+
+Gdk-Message: 23:08:56.781: /usr/lib/firefox/firefox: Fatal IO error 11 (Recurso temporariamente indisponível) on X server :0.
+
+Gdk-Message: 23:08:56.781: /usr/lib/firefox/firefox: Fatal IO error 11 (Recurso temporariamente indisponível) on X server :0.
+
+Gdk-Message: 23:08:56.821: firefox: Fatal IO error 11 (Recurso temporariamente indisponível) on X server :0.
+
+1592577204335	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerPR4cC"
+1592577205261	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592577205657	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592577205657	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592577205657	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592577205657	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592577207516	Marionette	INFO	Listening on port 36077
+1592577207545	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1592577882469	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQzt52u"
+1592577882771	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592577883080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592577883080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592577883080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592577883080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592577885058	Marionette	INFO	Listening on port 45799
+1592577885083	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200618/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200618/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200618/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200618/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://narutogame.com.br/index.php?secao=dojo_batalha_lutador, line 1421: TypeError: o.parent(...).attr(...) is undefined
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.error: "Error sending event: serverWebSocketClosed"
+console.error: (new Error("undefined passed where a value is required", "resource://devtools/shared/protocol/types.js", 115))
+Error: undefined passed where a value is required: identityWrite@resource://devtools/shared/protocol/types.js:115:11
+write@resource://devtools/shared/protocol/Request.js:117:22
+write@resource://devtools/shared/protocol/Request.js:43:26
+_sendEvent@resource://devtools/shared/protocol/Actor.js:66:24
+initialize/<@resource://devtools/shared/protocol/Actor.js:46:16
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+webSocketClosed@resource://devtools/server/actors/network-monitor/websocket-actor.js:96:10
+
+console.error: "Error sending event: serverWebSocketClosed"
+console.error: (new Error("undefined passed where a value is required", "resource://devtools/shared/protocol/types.js", 115))
+Error: undefined passed where a value is required: identityWrite@resource://devtools/shared/protocol/types.js:115:11
+write@resource://devtools/shared/protocol/Request.js:117:22
+write@resource://devtools/shared/protocol/Request.js:43:26
+_sendEvent@resource://devtools/shared/protocol/Actor.js:66:24
+initialize/<@resource://devtools/shared/protocol/Actor.js:46:16
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+webSocketClosed@resource://devtools/server/actors/network-monitor/websocket-actor.js:96:10
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1592580152017	Marionette	INFO	Stopped listening on port 45799
+1592580205876	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevgZ2DR"
+1592580206179	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592580206605	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592580206605	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592580206605	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592580206605	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592580208126	Marionette	INFO	Listening on port 40205
+1592580208197	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592580583275	Marionette	INFO	Stopped listening on port 40205
+1592580584232	Marionette	INFO	Stopped listening on port 36077
+1592580667786	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea7IBCv"
+1592580668059	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592580668430	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592580668430	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592580668430	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592580668430	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592580669864	Marionette	INFO	Listening on port 39979
+1592580669895	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://www.gstatic.com/mysidia/266b527ba968d38889a74d1593e253b6.js?tag=location/location_extension, line 158: ReferenceError: mys is not defined
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-0077685756201057&output=html&h=280&slotname=3531512840&adk=2231797421&adf=1609278124&w=336&lmt=1592580809&guci=2.2.0.0.2.2.0.0&url=http%3A%2F%2Fnarutogame.com.br%2Findex.php%3Fsecao%3Dpersonagem_selecionar&flash=0&wgl=1&adsid=NT&dt=1592580808421&bpp=28&bdt=79&idt=813&shv=r20200610&cbv=r20190131&ptt=5&saldr=sa&abxe=1&cookie=ID%3D83868a50baae524e-221936e7b4b7002e%3AT%3D1592580682%3ART%3D1592580682%3AS%3DALNI_MbZr1GY5MkGD_ADABnm0VJNUXKeSA&crv=1&correlator=664958888263&frm=20&pv=2&ga_vid=1282296494.1592580673&ga_sid=1592580673&ga_hid=1545449407&ga_fc=1&icsg=281469222125567&dssz=39&mdo=0&mso=0&u_tz=-180&u_his=3&u_java=0&u_h=1080&u_w=1920&u_ah=1040&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=783&ady=895&biw=1268&bih=862&scr_x=0&scr_y=342&eid=21066124&oid=3&pvsid=30673695631422&pem=754&ref=http%3A%2F%2Fnarutogame.com.br%2F&rx=0&eae=0&fc=640&brdim=310%2C51%2C310%2C51%2C1920%2C0%2C1280%2C936%2C1280%2C862&vis=1&rsz=%7C%7CleE%7C&abl=CS&pfx=0&fu=8208&bc=21&ifi=1&uci=a!1&xpc=AfEoeQfK2n&p=http%3A//narutogame.com.br&dtd=852, line 1: ReferenceError: mys is not defined
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592580820445	Marionette	INFO	Stopped listening on port 39979
+1592583720947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAZho06"
+1592583721756	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592583722768	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592583722769	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592583722769	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592583722769	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592583726981	Marionette	INFO	Listening on port 37829
+1592583727081	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1592583768369	Marionette	INFO	Stopped listening on port 37829
+1592584245423	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileW70ziQ"
+1592584246330	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592584248014	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592584248015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592584248017	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592584248018	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592584252639	Marionette	INFO	Listening on port 39283
+1592584252667	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: services.settings: main/cfr-fxa sync interrupted by shutdown
+console.warn: services.settings: main/cfr sync interrupted by shutdown
+1592584256407	Marionette	INFO	Stopped listening on port 39283
+1592586141970	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSvmrwh"
+1592586142259	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592586142630	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592586142630	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592586142630	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592586142631	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592586144722	Marionette	INFO	Listening on port 35739
+1592586144785	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: resource://gre/modules/NetworkGeolocationProvider.jsm, line 555: TypeError: xhr.response.location is undefined
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592586279123	Marionette	INFO	Stopped listening on port 35739
+1592588646029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8CyvV0"
+1592588646918	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592588647977	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592588647977	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592588647978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592588647978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592588652702	Marionette	INFO	Listening on port 41399
+1592588652777	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592592157459	Marionette	INFO	Stopped listening on port 41399
+1592592573339	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6fT8dC"
+1592592573869	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592592574406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592592574406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592592574406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592592574407	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592592577309	Marionette	INFO	Listening on port 38441
+1592592577352	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200618/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+1592592747322	Marionette	INFO	Stopped listening on port 38441
+1592598690451	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilei0B66g"
+1592598690733	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592598691133	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592598691133	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592598691133	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592598691133	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592598692736	Marionette	INFO	Listening on port 36933
+1592598692759	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: resource://gre/modules/NetworkGeolocationProvider.jsm, line 555: TypeError: xhr.response.location is undefined
+1592598899466	Marionette	INFO	Stopped listening on port 36933
+1592615043308	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYRGUqK"
+1592615044317	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1592615044959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592615044959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592615044959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592615044960	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1592615048436	Marionette	INFO	Listening on port 36431
+1592615048528	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript warning: http://narutogame.com.br/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: http://pagead2.googlesyndication.com/pagead/show_ads.js, line 47: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=114
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200610/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 

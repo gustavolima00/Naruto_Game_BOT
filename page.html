@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="c9a1zh80SwyaBQewF16AyALFXNpXkZ-rh6km-s-aN4I" />
+<meta name="og:image" content="https://narutogame.com.br/favicon.ico" />
+
+	<title>Naruto Game - Jogo online de Naruto RPG</title>
+  <meta name="keywords" content="naruto online, naruto rpg online, naruto rpg, jogo de naruto, naruto game, game naruto, jogo naruto, naruto jogos online" />
+  <meta name="description" content="Crie seu personagem no jogo Naruto Game e participe online das aventuras RPG de Naruto com seus amigos" />
+<link href='https://www.facebook.com/narutogamebr' rel='author'/>
+<link href='https://plus.google.com/u/0/b/110764258523291224819/110764258523291224819' rel='me'/>
+<link href='https://twitter.com/narutogame' rel='me'/>
+<link href="css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="css/html.css" rel="stylesheet" type="text/css"/>
+<link rel="shortcut icon" href="https://narutogame.com.br/favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="js/head.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/tutorial.js"></script>
+<script type="text/javascript" src="js/global.js?c=1460403230"></script>
+<script src="js/socket.io.js"></script>
+
+<!-- POP-UP -->
+
+<script type="text/javascript">
+	var __site		= "https://narutogame.com.br/";
+	var	__ec_site	= 'https://192.168.25.200/narutogame_r11/';
+	var	_strings		= [];
+	_strings['fechar']	= 'Fechar';
+	_strings['carregar_itens']	= 'Carregar Itens...';
+	_strings['g1']	= 'Você não pode utilizar esse item por enquanto!';
+	_strings['g2']	= 'Item de quest';
+	_strings['g3']	= 'Validade do item';
+	_strings['g4']	= 'Este item está indisponível por hoje, você já excedeu o limite de uso.';
+	_strings['g5']	= 'Você pode usar ainda';
+	_strings['g6']	= 'vezes hoje';
+	_strings['g7']	= 'Recupera';
+	_strings['g8']	= 'Requer';
+	_strings['g9']	= 'Intervalo de uso em batalha';
+	_strings['g10']	= 'faltando';
+
+</script>
+<!-- FIM POP-UP -->
+
+<script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=220419874734083";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div id="top-container">
+					<div id="background-topo2"></div>
+				<div id="topo-info" style="background:url('https://narutogame.com.br/images/layout/topo-info.png'); background-repeat: no-repeat;">
+			<div class="flag">
+				<div style="float: left; margin-left:5px"><img data-lang="br" src="https://narutogame.com.br/images/layout/br.png" alt="Naruto Game - Versão em Português"/></div>
+				<div style="float: left; margin-left:5px"><img data-lang="en" src="https://narutogame.com.br/images/layout/us.png" alt="Naruto Game - English Version"/></div>
+            </div>
+													<div id="formulario">
+					<form method="post" action="?acao=login" onsubmit="return false;" name="fIndexLogin" id="fIndexLogin">
+						<input type="hidden" name="cookie" value="" />
+						<div class="form-group">
+							<input type="text" id="email" name="email" placeholder="Email" />
+							<input type="password" id="senha" name="senha" placeholder="Senha" />
+						</div>
+						<div class="form-group" id="captcha-container">
+							<input type="text" name="captcha" maxlength="3" id="captcha" class="inputColorido" size="4" placeholder="Código" />
+						</div>
+						<img id="captcha-image" src="?acao=captcha&s" alt="Código" title="Código"/>
+						<input type="image" src="https://narutogame.com.br/images/layout/botoes/jogar.png" onclick="indexLogin()" style="height: 31px; margin-top: -8px"/>
+						<div id="social-login">
+							<a class="btn-facebook" href="javascript:;" onclick="location.href='https://www.facebook.com/v2.8/dialog/oauth?client_id=278794155478934&state=631aad6a340565b7e7e0d5300c8a9687&response_type=code&sdk=php-sdk-5.4.4&redirect_uri=https%3A%2F%2Fnarutogame.com.br&scope=public_profile%2Cemail'">Jogar</a>
+						</div>
+						<div class="break"></div>
+					</form>
+					<div id="recover-password">
+						<a href="?secao=recuperar_senha">Esqueceu a Senha?</a>
+					</div>
+				</div>
+
+				<script type="text/javascript" src="js/el_cookie.js"></script>
+				<script type="text/javascript">
+					(function () {
+						function S4() {
+						   return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+						}
+
+						function guid() {
+						   return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
+						}
+						var	ec	= new EverlastCookie({debug: true});
+
+						ec.get('nggx_r11_ec_id', function (value) {
+							console.log(value);
+
+							if (!value || value == '<br />') {
+								value	= guid();
+
+								ec.set('nggx_r11_ec_id', value);
+							}
+
+							$('#fIndexLogin [name=cookie]').val(value);
+						});
+					})();
+				</script>
+				<div id="social" style="position:absolute; right:90px; margin-top:-5px">
+					<div style="float: left; padding-top: 4px"><b class="amarelo">SIGA-NOS</b></div>
+					<div style="float: left; padding-left: 10px">
+						<a href="https://www.facebook.com/narutogamebr" target="_blank"><img src="https://narutogame.com.br/images/layout/social/facebook.png" border="1" style="border:1px solid #2e2d2d"/></a>
+						<a href="https://twitter.com/NarutoGame" target="_blank"><img src="https://narutogame.com.br/images/layout/social/twitter.png" border="1" style="border:1px solid #2e2d2d"/></a>
+						<a href="https://plus.google.com/+NarutogameBr/posts" target="_blank"><img src="https://narutogame.com.br/images/layout/social/googleplus.png" border="1" style="border:1px solid #2e2d2d"/></a>
+						<a href="https://www.youtube.com/animegamevideos" target="_blank"><img src="https://narutogame.com.br/images/layout/social/youtube.png" border="1" style="border:1px solid #2e2d2d"/></a>
+					</div>
+				</div>
+				<div id="logo-deslogado"><a href="https://narutogame.com.br"><img src="https://narutogame.com.br/images/layout/logo.png" border="0"/></a></div>
+
+					</div>
+
+					<div id="topo">
+				<div id="info-game">
+					<h1><span class="amarelo" style="font-size:14px">NARUTO GAME</span><br /><span style="color:#FFF">Jogo online de Naruto RPG</span></h1>
+					<h2>NARUTO GAME é um dos mais populares "browser games"<br /> de Naruto. Em nosso jogo você será um ninja e sua missão é desenvolver<br /> suas habilidades e traçar seu próprio caminho ninja para tornar-se Kage.</h2>
+				</div>
+				<div id="menu-container"></div>
+			</div>
+		    </div>
+	<div id="conteudo">
+		<div id="pagina" style="padding-top: 50px">
+			<div id="colunas" >
+									<div id="menu_fundo"></div>
+				<div id="esquerda">
+	<div id="menu_repete" style="">
+							            <div class="titulos-menu"><img src="https://narutogame.com.br/images/layout/menu-titulos/cadastro-rapido.png" alt="Publicidade"/></div>
+				<form id="fast-signup-form" onsubmit="return false">
+					<div class="form-group">
+						<label>E-Mail</label>
+						<input type="text" autocomplete="off" name="email" />
+					</div>
+					<div class="form-group">
+						<label>Confirmar Email</label>
+						<input type="text" autocomplete="off" name="email_confirmacao" />
+					</div>
+					<div class="form-group">
+						<label>Senha</label>
+						<input type="password" autocomplete="off" name="senha" />
+					</div>
+					<div class="form-group">
+						<label>Confirmar Senha</label>
+						<input type="password" autocomplete="off" name="confirma_senha" />
+					</div>
+					<div class="form-group captcha">
+						<label>Código de Segurança</label>
+						<input type="text" name="captcha" maxlength="3" />
+						<img src="index.php?acao=captcha&_cache=20200619220659&quick" class="image" />
+					</div>
+					<div class="form-group aceite">
+						<input type="checkbox" name="aceite" value="1" />
+						Declaro que li e concordo com os <a href="index.php?secao=termos_uso" target="_blank" class="linkTopo">Termos de Uso</a>
+					</div>
+					<div class="form-group submit-container">
+						<a class="submit">Jogar agora</a>
+					</div>
+				</form>
+								  									<div class="titulos-menu"><img src="https://narutogame.com.br/images/layout/menu-titulos/principal.png" alt="principal.png"/></div>
+				<ul>
+																		<li><a href="?secao=home">Home</a></li>
+													<li><a href="?secao=cadastro"><b>Crie sua conta</b></a></li>
+													<li><a href="?secao=ativar_conta_manual">Ative sua conta</a></li>
+													<li><a href="?secao=recuperar_senha">Esqueci minha senha</a></li>
+													<li><a href="?secao=manual">Manual</a></li>
+													<li><a href="?secao=halldafama_r26">Hall da Fama</a></li>
+													<li><a href="?secao=halldafama_equipe_r26">Hall da Fama - Equipes</a></li>
+													<li><a href="?secao=halldafama_guild_r26">Hall da Fama - Organizações</a></li>
+													<li><a href="?secao=divulgue_nos">Divulgue-nos</a></li>
+													<li><a href="?secao=fale_conosco">Fale Conosco</a></li>
+													<li><a href="?secao=calculadora">Calculadora</a></li>
+															</ul>
+						<div class="titulos-menu"><img src="https://narutogame.com.br/images/layout/menu-titulos/publicidade.png" alt="Publicidade"/></div>
+						<ul>
+									<li><a href="?acao=link&id=1&go=http%3A%2F%2Fanimegame.com.br" target="blank">Anime Game</a></li>
+									<li><a href="?acao=link&id=2&go=http%3A%2F%2Fbleachgame.com.br" target="blank">Bleach Game</a></li>
+									<li><a href="?acao=link&id=3&go=http%3A%2F%2Fdragonballgame.com.br" target="blank">Dragon Ball Game</a></li>
+									<li><a href="?acao=link&id=4&go=http%3A%2F%2Fcdzgame.com.br" target="blank">CDZ Game</a></li>
+									<li><a href="?acao=link&id=5&go=http%3A%2F%2Fanimegame.com.br%2Floja%2F" target="blank">Loja Anime Game</a></li>
+									<li><a href="?acao=link&id=6&go=http%3A%2F%2Fclickjogosonline.blog.br" target="blank">Click Jogos Online</a></li>
+									<li><a href="?acao=link&id=7&go=http%3A%2F%2Fanime.jogosonline.blog.br" target="blank">Jogos online de Naruto</a></li>
+									<li><a href="?acao=link&id=14&go=http%3A%2F%2Fanimeallstarsgame.com.br" target="blank">Anime All-Stars Game</a></li>
+							</ul>
+			<br /><br />
+				
+				
+	</div>
+</div>
+<div id="direita">//<script>
+location.href='?secao=negado&byrule=section&source=personagem_selecionar';
+//</script>
