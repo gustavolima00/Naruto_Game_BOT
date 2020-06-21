@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="c9a1zh80SwyaBQewF16AyALFXNpXkZ-rh6km-s-aN4I" />
+<meta name="og:image" content="http://narutogame.com.br/favicon.ico" />
+  <title>Naruto Game - Esse é o seu jeito Ninja de ser</title>
+  <meta name="keywords" content="jogo de naruto, naruto game, game naruto, jogo naruto, naruto jogos online" />
+  <meta name="description" content="Crie seu personagem no jogo Naruto Game e participe online das aventuras RPG de Naruto com seus amigos" />
+<link href='https://www.facebook.com/narutogamebr' rel='author'/>
+<link href='https://plus.google.com/u/0/b/110764258523291224819/110764258523291224819' rel='me'/>
+<link href='https://twitter.com/narutogame' rel='me'/>
+<link href="css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="css/html.css" rel="stylesheet" type="text/css"/>
+<link rel="shortcut icon" href="http://narutogame.com.br/favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="js/head.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/tutorial.js"></script>
+<script type="text/javascript" src="js/global.js?c=1460403230"></script>
+<script src="js/socket.io.js"></script>
+<!-- POP-UP -->
+<script type="text/javascript">
+	var	socket	= io.connect('narutogame.com.br:2533');
+	socket.on('connect', function () {
+		socket.emit('set-language', {lang: 'br'});
+	});
+	socket.on('message', function (data) {
+		var	d	= $(document.createElement('DIV')).addClass('highlight-window');
+		var	m	= $(document.createElement('DIV')).addClass('highlight-text');
+		var	len	= $('.highlight-window').length;
+		m.html(data.message);
+		d.append(m);
+		$(document.body).append(d);
+		if(len) {
+			d.css({marginTop: len * (d.height() + 10)});
+		}
+		var	__iv	= setInterval(function () {
+			d.animate({opacity: 0}, function () {
+				d.remove();
+			});
+			clearInterval(__iv);
+		}, 7000);
+	});
+</script>
+<script type="text/javascript">
+	var __site		= "http://narutogame.com.br/";
+	var	__ec_site	= 'https://192.168.25.200/narutogame_r11/';
+	var	_strings		= [];
+	_strings['fechar']	= 'Fechar';
+	_strings['carregar_itens']	= 'Carregar Itens...';
+	_strings['g1']	= 'Você não pode utilizar esse item por enquanto!';
+	_strings['g2']	= 'Item de quest';
+	_strings['g3']	= 'Validade do item';
+	_strings['g4']	= 'Este item está indisponível por hoje, você já excedeu o limite de uso.';
+	_strings['g5']	= 'Você pode usar ainda';
+	_strings['g6']	= 'vezes hoje';
+	_strings['g7']	= 'Recupera';
+	_strings['g8']	= 'Requer';
+	_strings['g9']	= 'Intervalo de uso em batalha';
+	_strings['g10']	= 'faltando';
+</script>
+<!-- FIM POP-UP -->
+<script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=220419874734083";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="top-container">
+								<div id="background-topo" style="background-image:url(images/layout/topo-logado/3.jpg);"></div>
+				<div id="topo-info" style="background:url('http://narutogame.com.br/images/layout/topo-info2.png'); background-repeat: no-repeat;">
+			<div class="flag">
+				<div style="float: left; margin-left:5px"><img data-lang="br" src="http://narutogame.com.br/images/layout/br.png" alt="Naruto Game - Versão em Português"/></div>
+				<div style="float: left; margin-left:5px"><img data-lang="en" src="http://narutogame.com.br/images/layout/us.png" alt="Naruto Game - English Version"/></div>
+            </div>
+													<div id="duracao-logado" >
+					 					 <div class="amarelo" style="position: relative; padding-top: 40px; font-size:12px; padding-left: 26px;">
+					 	Encerra em: <b>68 dias</b><br />
+					 						 </div>
+                </div>
+								<div id="aviso-logado">
+					<p style="width: 220px; margin-left: 66px; margin-top: 18px; text-align: center">
+						Bem vindo ao Round Oficial 27!<br />Fique ligado na última  <a class="laranja" href="?secao=ler_noticia&id=373">Notícia!</a>
+					</p>
+				</div>
+												<div onclick="location.href='?secao=vantagens'" id="vip-logado" style="cursor: pointer; background-image:url(http://narutogame.com.br/images/layout/topo-vip.png)" >
+					<div style="float:left; font-size:11px; color:#6491a3; margin: 32px 0 0 190px;">
+						<span style="position: relative; top: -8px; font-size: 12px">
+							<a href="?secao=vantagens" title="Use seus créditos!" class="linkTopo">Créditos Vip: 31</a>
+						</span>
+					</div>
+				</div>
+				                <div id="logo-logado">
+                	<a href="https://narutogame.com.br"><img src="http://narutogame.com.br/images/layout/logo-logado.png" border="0" class="logo-ng-topo"/></a>
+				</div>
+									<div id="graduacao-logado">
+					<a href="?secao=graduacoes"><img src="http://narutogame.com.br/images/layout/graduacoes/1-1.png" border="0" /></a>
+						<p></p>
+					</div>
+									</div>
+					<div id="topo2">
+				<div id="menu-bg-overlay" style="background-image:url(images/layout/topo-logado/3.jpg);"></div>
+				<div id="menu-container">
+					<div id="menu-character-topo">
+						<div id="pIcones">
+							<!-- Reloginho -->
+							<div class="i" id="topClock">
+								<div class="t">
+									<b class="azul">Rotinas do Jogo</b><br /><br />
+																			<b class="azul">Healing: <span id="d-healing-timer"></span></b><br />
+										Recupera 20% dos seus atributos.<br />
+										<b class="azul">Missão NPC Vila: <span id="d-npc-vila-timer"></span></b><br />
+Tempo da finalização das missão de invasão.<br />
+<b class="azul">Cura do Guardião e Ranking Ninja: <span id="d-heal-npc-vila-timer"></span></b><br />
+Recupera 50% de todos os atributos do npc guardião e Atualiza o ranking de ninjas<br />
+<b class="azul">Ranking Equipe e Conquista: <span id="d-ranking1-eqp-timer"></span></b><br />
+Atualiza o ranking de equipes e conquista<br />
+<b class="azul">Ranking Organização: <span id="d-ranking-org-timer"></span></b><br />
+Atualiza o ranking de organização<br />
+<b class="azul">Bijuu: <span id="d-bijuu-timer"></span></b><br />
+Novas bijuus são sorteadas e as do outro dia deletadas<br />
+<b class="azul">Diversas Rotinas: <span id="d-midnight1-timer"></span></b><br />
+Libera o treino de atributos e de jutsus<br />
+Limpa os Tickets de Hospital, Histórico de Combates e Livro de Registros.<br />
+Limpa o exp diário ganho nas equipes<br />
+Renova os combates npcs diários e os contadores de treino dos duelos <br />
+Libera a Diplomacia para votação ( Somente na Sexta-feira )<br/>
+<b class="azul">Missões Especiais e Bingo Book: <span id="d-ranking2-eqp-timer"></span></b><br />
+Libera as missões especiais ( Somente nos dias 1 e 15 de todos os meses )<br />
+Novos Alvos para Ninjas no Bingo Book ( Somente na Segunda-feira )<br />									<script>
+										cronTimer(0, 0, 0, 0, 2, 'd-healing-timer');
+										cronTimer(15, 28, 43, 0, 24, 'd-npc-vila-timer');
+										cronTimer(4, 28, 43, 0, 24, ['d-ranking1-eqp-timer', 'd-ranking2-eqp-timer','d-ranking3-eqp-timer']);
+										cronTimer(0, 28, 43, 0, 4, 'd-ranking-org-timer');
+										cronTimer(23, 58, 43, 0, 24, ['d-bijuu-timer', 'd-bijuu-timer2']);
+										cronTimer(23, 58, 43, 0, 24, ['d-bijuu-timer', 'd-bijuu-timer3']);
+										cronTimer(0, 28, 43, 0, 2, 'd-heal-npc-vila-timer');
+										cronTimer(0, 28, 43, 0, 24, ['d-midnight1-timer','d-midnight2-timer' ]);
+									</script>
+								</div>
+							</div>
+							<!-- Reloginho -->
+														<div id="topAdvantages">
+							
+								<div class="i">
+                                <img src="http://narutogame.com.br/images//layout/topo-logado/icones/kage.png" border="0" width="24" />
+									 <div class="t">
+									 	Sem vantagens vips ou promoções no momento.									 </div>
+								</div>
+																<!-- VANTAGENS VIPS -->
+								</div>
+								<!-- Reloginho -->
+																<div id="topFidelity">
+									<div class="i">
+									   <img src="http://narutogame.com.br/images/layout/icones/gift.png" border="0" width="20" />
+										<div class="t">
+											<b class="azul">Fidelidade Ninja</b><br />
+											Receba um <a href='?secao=fidelidade' class='linksSite'>prêmio especial</a> por logar hoje no jogo!										</div>
+									</div>
+								</div>
+							<!-- Reloginho -->
+							</div>
+							<!-- Friends -->
+														<div id="topFriends">
+								<a href="?secao=lista_amigos"><img src="http://narutogame.com.br/images/layout/icones/friend.png" border="0" width="18" style="position:relative; top: 4px" /></a>
+															</div>
+							<!-- Friends -->
+							<!-- Mensageiro -->
+							<div id="topMessages">
+																						<div style="position: relative; float: left">
+									<a href="?secao=mensagens">
+										<img src="http://narutogame.com.br/images/layout/topo-logado/icones/mensageiro2.png" border="0" />
+										<div style="border: solid 2px #FFF; background-color: #DE1010; color: #FFF; border-radius: 10px; width: 20px; height: 20px; padding-top: 2px; position: absolute;right: -7px;top: -9px; text-align: center;">
+											5										</div>
+									</a>
+								</div>
+														</div>
+							<!-- Mensageiro -->
+							<!-- Logout -->
+							<div id="topLogout">
+																									<a href="javascript:logoff()"><img src="http://narutogame.com.br/images/layout/topo-logado/icones/logout.png" height="20" alt="Logout"/></a>
+															</div>
+							<!-- Logout -->
+					</div>
+					<div id="informacoes">
+                    						<div id="level-start">
+							<span>LVL</span>
+							1						</div>
+						<div id="barra_exp">
+														
+				<div class="barra-exp-topo barra-exp-topo-exp">
+					<div class="fill" style="width: 128px; background-image: url(http://narutogame.com.br/images/layout/barras_topo/barra_topo_exp_fill.png)"><span>EXP: 616/900</span>
+					<img src="http://narutogame.com.br/images/layout/barras_topo/barra_exp_brilho.png" />
+					</div>
+				</div>						</div>
+						<div id="level-end">
+							<span>LVL</span>
+							2						</div>
+						<div class="ryou" id="cnPRYt">500						</div>
+					</div>
+					<div id="icones">
+						<div class="miniIcones">
+							<div class="icon hp"></div>
+							<div class="iconeTxt" id="cnPHPt">
+								78/78								<div class="barra-exp-topo"><div class="fill" style="width: 57px; background-image: url(http://narutogame.com.br/images/layout/barras_topo/barra_topo_vida_fill.png)"></div></div>							</div>
+						</div>
+						<div class="miniIcones">
+							<div class="icon cha"></div>
+							<div class="iconeTxt" id="cnPSPt">
+								83/83								<div class="barra-exp-topo"><div class="fill" style="width: 57px; background-image: url(http://narutogame.com.br/images/layout/barras_topo/barra_topo_chakra_fill.png)"></div></div>							</div>
+						</div>
+						<div class="miniIcones">
+							<div class="icon sta"></div>
+							<div class="iconeTxt" id="cnPSTAt">
+								225/225								<div class="barra-exp-topo"><div class="fill" style="width: 57px; background-image: url(http://narutogame.com.br/images/layout/barras_topo/barra_topo_stamina_fill.png)"></div></div>							</div>
+						</div>
+					</div>
+					<ul id="loggedin-menu">
+																				<li class="category">
+								<a class="category-data ">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/3.png">
+									Usuário								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=usuario_dados">Meus dados</a></li>
+																					<li><a href="?secao=mensagens">Mensageiro</a></li>
+																					<li><a href="?secao=vantagens">Vantagens VIP</a></li>
+																					<li><a href="?secao=temas">Temas Vips</a></li>
+																					<li><a href="?secao=jogador_vip">Jogador VIP</a></li>
+																					<li><a href="?secao=gasto_vip">Compras com Créditos VIP</a></li>
+																					<li><a href="?secao=atributos">Fórmulas do Jogo</a></li>
+																					<li><a href="?secao=indique">Indique seus amigos</a></li>
+																					<li><a href="?secao=senha_trocar">Trocar Senha</a></li>
+																					<li><a href="?secao=suporte"><b>Suporte</b></a></li>
+																					<li><a href="javascript:logoff()">Logout</a></li>
+																			</ul>
+															</li>
+																				<li class="category">
+								<a class="category-data ">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/4.png">
+									Personagem								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=personagem_status"><b>Status</b></a></li>
+																					<li><a href="?secao=recompensa_log">Recompensas</a></li>
+																					<li><a href="?secao=amigos">Lista de Amigos</a></li>
+																					<li><a href="?secao=lista_amigos">Localizador de Amigos</a></li>
+																					<li><a href="?secao=fidelidade">Fidelidade Ninja</a></li>
+																			</ul>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/7_disabled.png">
+									Academia								</a>
+															</li>
+																				<li class="category">
+								<a class="category-data ">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/16.png">
+									Sensei								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=tutorial">Tutorial</a></li>
+																					<li><a href="?secao=sensei">Sensei</a></li>
+																					<li><a href="?secao=desafios">Desafios</a></li>
+																			</ul>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/1-11_disabled.png">
+									Vila Atual								</a>
+															</li>
+																				<li class="category">
+								<a class="category-data ">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/12.png">
+									Combates								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=dojo_batalha_lutador">Batalha NPC</a></li>
+																					<li><a href="javascript:doAtkFlight()">Fugir da batalha</a></li>
+																			</ul>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/6_disabled.png">
+									Equipe								</a>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/5_disabled.png">
+									Organização								</a>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="http://narutogame.com.br/images/layout/categorias_topo/9_disabled.png">
+									Ranking								</a>
+															</li>
+																			<li class="category inventory-container">
+							<a class="category-data">
+								<img src="http://narutogame.com.br/images/layout/topo-logado/icones/bag.png" class="inventory-trigger" alt="Sua mochila ninja" border="0" />
+								Bolsa							</a>
+						<ul>
+								<li>
+									<div data-sell-confirm="Você irá vender %item e irá ganhar RY$ %price.<br />Confirmar venda?" class="arrow_box t inventory-data" data-default="Carregando Itens..."></div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		    </div>
+	<div id="conteudo">
+		<div id="pagina" style="padding-top: 70px">
+			<div id="colunas" style="background-image: none !important">
+				<div class="titulo-secao titulo-secao-dojo titulo-secao-dojo-1"><p>Desafio Dojo</p></div>
+<br />
+<div align="center" style="position: relative; bottom: 5px">
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9166007311868806";
+    google_ad_slot = "4392295775";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+<!-- NG - Dojo -->
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>	
+<div id="cnBase">
+<style type="text/css">
+	.pvpAtkDetailPopup {
+		position: absolute;
+		width: 270px;
+		background-color: #FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		background-color: #333333;
+		padding: 4px;
+		border: solid 1px #FF9900;
+		color: #FFFFFF;
+	}
+	.atk-tooltip {
+		display: none;
+		z-index: 10000 !important;
+		color: #FFF;
+		text-align: left;
+		position: absolute;
+		z-index: 10000000;
+		-moz-border-bottom-colors: none;
+		-moz-border-image: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		background-color: #0a0a0a;
+		background-position: 1px 1px;
+		background-repeat: no-repeat;
+		border-color: #B1B2B4 #434445 #2F3032;
+		border-radius: 3px 3px 3px 3px;
+		border-style: solid;
+		border-width: 2px;
+		overflow: hidden;
+		padding: 8px;
+		width: 250px;
+		top: 30px;
+		font-size: 11px;
+		line-height: normal;
+	}
+	.atk-tooltip b{
+		color: #FF6600;
+	}
+	.atk-tooltip hr, #cnLog hr{
+		color: #c1c1c1;
+		border: 1px dotted #272727;
+	}
+	.d-icon-counter {
+		background-position: top left;
+		background-repeat: no-repeat;
+		width: 34px;
+		height: 34px;
+		float: left;
+		color: #FFF;
+	}
+	.d-icon-counter span{
+		position: relative;
+		left: -12px;
+		font-size: 9px;
+		top: 3px;
+	}
+	.d-icon-counter-r {
+		float: left !important
+	}
+	.d-buff {
+		position: relative;
+		cursor: pointer;
+		z-index: 2;
+		float: left;
+		width: 65px;
+		height: 65px;
+	}
+	.d-buff div {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		margin-left: 63px;
+		margin-top: 9px;
+		white-space: nowrap;
+		display: none;
+		background-color: #020e1a;
+		padding: 4px;
+		padding-left: 6px;
+		height: 44px;
+		border-radius: 5px;
+	}
+	.d-buff div img {
+		cursor: pointer;
+	}
+	#imgDP, #imgDE {
+		width: 226px;
+		z-index: 1;
+	}
+	#cnLog {
+		overflow: hidden;
+	}
+	#cnLog .buff, #cnLog .buff .pvp_p_atk {
+		color: #a4399f !important
+	}
+	#cnFinal .msg_gai {
+		margin: 0px auto;
+		float: none !important;
+	}
+	#painel-pvp-village1, #painel-pvp-village2 {
+		width: 60px;
+		height: 54px;
+		position: absolute;
+		top: 16px;
+	}
+	#painel-pvp-village1, #painel-pvp-flight {
+		left: 54px
+	}
+	#painel-pvp-village2, #painel-pvp-star {
+		right: 54px
+	}
+	#painel-pvp-star, #painel-pvp-flight {
+		width: 60px;
+		height: 54px;
+		position: absolute;
+		bottom: 19px;
+	}
+	#painel-pvp-flight {
+	}
+</style>
+<div id="cnFinal"></div>
+	<div id="painel-pvp-container">
+				<div class="new_dojo">
+						<div style="position: absolute; bottom: 210px; width: 100%; text-align: center; font-size: 22px; background-image: url(http://narutogame.com.br/images/layout/combate/d-seta-b.png); background-position: center center; background-repeat: no-repeat" id="d-atk-timer"></div>
+			<div class="a-topo-batalha">
+				<div style="width: 250px; position:relative;">
+					<div id="cnPBuff"></div>
+				</div>
+			</div>
+			<div class="b-topo-batalha">
+				<div style="width: 250px; position:relative;">
+					<div id="cnEBuff"></div>
+				</div>
+			</div>
+			<div class="break"></div>
+			<div class="a-esquerda-batalha">
+				<div class="a-habilidades-batalha" id="imgPP">
+																																			
+										</div>
+				<div class="a-profile-batalha">
+					<!--
+					<img src="http://narutogame.com.br/images/layout/profile/3/1.png"/>
+					-->
+					<img src="http://narutogame.com.br/images/layout/profile/3/1.png" />				</div>
+				<div class="a-stats-batalha">
+					<div class="a-stats-batalha-nome">
+						<div>
+							<span class="player-name">
+								LeeSenseiHIHI							</span>
+							<span class="player-headline">
+								Genin							</span>
+						</div>
+					</div>
+					<div id="imgDP">
+						<div class="d-icon-counter" id="d-pcrit-count" style="background-image: URL(http://narutogame.com.br/images/layout/crit.png);">
+							<span>0</span>
+						</div>
+						<div class="d-icon-counter" id="d-pesq-count" style="background-image: URL(http://narutogame.com.br/images/layout/esq.png)">
+							<span>0</span>
+						</div>
+						<div class="player-info-box">
+							<div>
+								Estudante								- Lvl 1							</div>
+							<div>
+								<span>Poder Ninja:</span>
+								<span id="ninjap-p">7350</span>
+							</div>
+						</div>
+					</div>
+					<div class="a-stats-batalha-barras a-stats-batalha-barras-l">
+						
+		<div class='barra_exp4' style='background-image: url(images/layout/barra_exp/hp_off.png); background-repeat: no-repeat; width: 219px; height: 22px;' id='cnPHP' data-dir='l'>
+			<div id='p' style='width: 0px; height: 22px; background-image: url(images/layout/barra_exp/hp_on.png); background-repeat: no-repeat;'></div>
+			<div id='t'></div>
+		</div>
+								<div style="clear: both"></div>
+						
+		<div class='barra_exp4' style='background-image: url(images/layout/barra_exp/sp_off.png); background-repeat: no-repeat; width: 261px; height: 22px;' id='cnPSP' data-dir='l'>
+			<div id='p' style='width: 0px; height: 22px; background-image: url(images/layout/barra_exp/sp_on.png); background-repeat: no-repeat;'></div>
+			<div id='t'></div>
+		</div>
+								<div style="clear: both"></div>
+						
+		<div class='barra_exp4' style='background-image: url(images/layout/barra_exp/sta_off.png); background-repeat: no-repeat; width: 232px; height: 22px;' id='cnPSTA' data-dir='l'>
+			<div id='p' style='width: 0px; height: 22px; background-image: url(images/layout/barra_exp/sta_on.png); background-repeat: no-repeat;'></div>
+			<div id='t'></div>
+		</div>
+													</div>
+				</div>
+			</div>
+			<div class="vs-batalha">
+								<div class="log-batalha">
+					<div id="cnLog" class="cnLog"></div>
+					<div id="cnPVPLog" class="cnPVPLog laranja">Aguarde...</div>
+					<div id="cnDebug"></div>
+				</div>
+			</div>
+			<div class="b-direita-batalha">
+				<div class="b-habilidades-batalha" id="imgPE">
+								        			        			        			        			        			        
+				</div>
+				<div class="b-profile-batalha">
+											<img  src="http://narutogame.com.br/images/layout/profile/223/1.png"/>
+									</div>
+				<div class="break"></div>
+				<div class="b-stats-batalha">
+					<div class="b-stats-batalha-nome">
+						<div>
+							<span class="player-name">
+								Mabui							</span>
+							<span class="player-headline">
+															</span>
+						</div>
+					</div>
+					<div id="imgDE">
+						<div class="d-icon-counter d-icon-counter-r" id="d-ecrit-count" style="background-image: URL(http://narutogame.com.br/images/layout/crit.png);">
+							<span>0</span>
+						</div>
+						<div class="d-icon-counter d-icon-counter-r" id="d-eesq-count" style="background-image: URL(http://narutogame.com.br/images/layout/esq.png)">
+							<span>0</span>
+						</div>
+						<div class="player-info-box">
+							<div>
+								--								- Lvl 1							</div>
+							<div>
+								<span>Poder Ninja:</span>
+								<span id="ninjap-e">4200</span>
+							</div>
+						</div>
+					</div>
+					<div class="b-stats-batalha-barras">
+						
+		<div class='barra_exp4' style='background-image: url(images/layout/barra_exp/hp_off_r.png); background-repeat: no-repeat; width: 219px; height: 22px;' id='cnEHP'>
+			<div id='p' style='width: 0px; height: 22px; background-image: url(images/layout/barra_exp/hp_on_r.png); background-repeat: no-repeat;'></div>
+			<div id='t'></div>
+		</div>
+								<div style="clear: both"></div>
+						
+		<div class='barra_exp4' style='background-image: url(images/layout/barra_exp/sp_off_r.png); background-repeat: no-repeat; width: 261px; height: 22px;' id='cnESP'>
+			<div id='p' style='width: 0px; height: 22px; background-image: url(images/layout/barra_exp/sp_on_r.png); background-repeat: no-repeat;'></div>
+			<div id='t'></div>
+		</div>
+								<div style="clear: both"></div>
+						
+		<div class='barra_exp4' style='background-image: url(images/layout/barra_exp/sta_off_r.png); background-repeat: no-repeat; width: 232px; height: 22px;' id='cnESTA'>
+			<div id='p' style='width: 0px; height: 22px; background-image: url(images/layout/barra_exp/sta_on_r.png); background-repeat: no-repeat;'></div>
+			<div id='t'></div>
+		</div>
+							</div>
+				</div>
+			</div>
+			<div class="break"></div>
+		</div>
+	</div>
+	<div id="cnActionBar">
+		<style>
+	.atk {
+		width: 48px;
+		height: 48px;
+		padding: 2px;
+		margin: 2px;
+		float: left;
+		position:relative;
+		left: -2px;
+		cursor: pointer;
+	}
+	.atk-2{
+		background-color: #0f0f0f;	
+	}
+	.atk-3{
+		background-color: #0f0f0f;	
+	}
+	.atk-1{
+		background-color: #0f0f0f;	
+	}
+</style>
+<div id="actionbar-container">
+			<div id="painel-pvp-flight"></div>
+				<div id="d-actionbar">
+		<div class="titulo-secao3">
+			<p>Meus Jutsus</p>
+			<div class="icon_bar">
+				<div class="pvp-atk-filter" data-filter="tai">Tai</div>
+				<div class="pvp-atk-filter" data-filter="ken">Buk</div>
+				<div class="pvp-atk-filter" data-filter="nin">Nin</div>
+				<div class="pvp-atk-filter" data-filter="gen">Gen</div>
+				<div class="pvp-atk-filter" data-filter="nt">Buffs & Debuffs</div>
+				<div class="pvp-atk-filter" data-filter="neardist">Armas</div>
+							</div>
+		</div>
+		<div id="attack-list">
+						
+												<div class="atk atk-1 atk-tai" style="z-index:10000">
+				<div class="atki-6" style="position: absolute; text-align: center; width: 48px; height: 48px; top: 9px; font-size: 31px; z-index:-1"></div>
+				<img id="atki-6" src="http://narutogame.com.br/images/layout/jutsu/defesa_2_mao.jpg" role="6" width="48"  />
+			</div>
+						
+												<div class="atk atk-1 atk-tai" style="z-index:10000">
+				<div class="atki-7" style="position: absolute; text-align: center; width: 48px; height: 48px; top: 9px; font-size: 31px; z-index:-1"></div>
+				<img id="atki-7" src="http://narutogame.com.br/images/layout/jutsu/defesa_acrobatica.jpg" role="7" width="48"  />
+			</div>
+						
+												<div class="atk atk-1 atk-tai" style="z-index:10000">
+				<div class="atki-4" style="position: absolute; text-align: center; width: 48px; height: 48px; top: 9px; font-size: 31px; z-index:-1"></div>
+				<img id="atki-4" src="http://narutogame.com.br/images/layout/jutsu/soco.jpg" role="4" width="48"  />
+			</div>
+						
+												<div class="atk atk-1 atk-tai" style="z-index:10000">
+				<div class="atki-5" style="position: absolute; text-align: center; width: 48px; height: 48px; top: 9px; font-size: 31px; z-index:-1"></div>
+				<img id="atki-5" src="http://narutogame.com.br/images/layout/jutsu/chute.jpg" role="5" width="48"  />
+			</div>
+				<div class="break"></div>
+	</div>
+	<div class="break"></div>
+</div>
+	<div class="bottom"></div>
+	<div class="break"></div>
+</div>
+<script>
+	var _items	= [];
+	
+			_items['4'] = {"id":4,"n":"Soco","t":1,"d":"Aplica um forte soco no oponente","tr":3,"hab":1,"trl":0,"du":0,"portao":false,"atkf":5,"atkm":0,"def":0,"deff":0,"defm":0,"tai":0,"ken":0,"nin":0,"gen":0,"agi":0,"con":0,"ene":0,"forc":0,"inte":0,"res":0,"precf":0,"precm":0,"cmin":0,"cmax":0,"esq":0,"det":0,"conv":0,"conc":0,"esquiva":0,"b_hp":0,"b_sp":0,"b_sta":0,"enhance_crit":0,"st":0,"ste":0,"chp":0,"csp":1,"csta":8,"pre":100,"ll":0,"me":false,"war_timer":false};
+			_items['5'] = {"id":5,"n":"Chute","t":1,"d":"Aplica um forte chute no oponente","tr":3,"hab":1,"trl":0,"du":0,"portao":false,"atkf":8,"atkm":0,"def":0,"deff":0,"defm":0,"tai":0,"ken":0,"nin":0,"gen":0,"agi":0,"con":0,"ene":0,"forc":0,"inte":0,"res":0,"precf":0,"precm":0,"cmin":0,"cmax":0,"esq":0,"det":0,"conv":0,"conc":0,"esquiva":0,"b_hp":0,"b_sp":0,"b_sta":0,"enhance_crit":0,"st":0,"ste":0,"chp":0,"csp":2,"csta":11,"pre":100,"ll":0,"me":false,"war_timer":false};
+			_items['6'] = {"id":6,"n":"Defender com as m\u00e3os","t":1,"d":"Realiza um bloqueio muito efetivo com as pr\u00f3prias m\u00e3os","tr":3,"hab":1,"trl":0,"du":0,"portao":false,"atkf":0,"atkm":0,"def":5,"deff":0,"defm":0,"tai":0,"ken":0,"nin":0,"gen":0,"agi":0,"con":0,"ene":0,"forc":0,"inte":0,"res":0,"precf":0,"precm":0,"cmin":0,"cmax":0,"esq":0,"det":0,"conv":0,"conc":0,"esquiva":0,"b_hp":0,"b_sp":0,"b_sta":0,"enhance_crit":0,"st":0,"ste":0,"chp":0,"csp":3,"csta":10,"pre":100,"ll":0,"me":false,"war_timer":false};
+			_items['7'] = {"id":7,"n":"Acrobacia","t":1,"d":"Realiza um salto para se defender do oponente","tr":3,"hab":1,"trl":0,"du":0,"portao":false,"atkf":0,"atkm":0,"def":8,"deff":0,"defm":0,"tai":0,"ken":0,"nin":0,"gen":0,"agi":0,"con":0,"ene":0,"forc":0,"inte":0,"res":0,"precf":0,"precm":0,"cmin":0,"cmax":0,"esq":0,"det":0,"conv":0,"conc":0,"esquiva":0,"b_hp":0,"b_sp":0,"b_sta":0,"enhance_crit":0,"st":0,"ste":0,"chp":0,"csp":4,"csta":15,"pre":100,"ll":0,"me":false,"war_timer":false};
+	</script>	</div>
+<script type="text/javascript">
+	var _tooltip		= null;
+	var	_pToken			= 'e3d496df5259d0aa3083f73bce06f3ea';
+	var _check_triggers	= [];
+	var _nt_disabled	= [];
+	var _cur_atk_tab	= 0;
+	var is_animating	= false;
+	var __can_atk		= false;
+	var	__dyn_atk		= [];
+	$('#cnLog').on('mouseover', '.pvp_p_atk', item_hover_f);
+	$('#cnLog').on('mouseout', '.pvp_p_atk', item_out_f);
+			var	__timer_m	= 0;
+		var __timer_s	= 0;
+		var __timer_atk_iv = setInterval(function () {
+			if(__timer_m < 0) {
+				$('#d-atk-timer').html('--:--');
+				return;
+			}
+			__timer_s--;
+			if(__timer_s <= 0) {
+				__timer_s = 59;
+				__timer_m--;
+			}
+			if(__timer_m < 0) {
+				$('#d-atk-timer').html('--:--');
+				return;
+			}
+			$('#d-atk-timer').html(
+				(__timer_m < 10 ? '0' + __timer_m : __timer_m) +
+				':' +
+				(__timer_s < 10 ? '0' + __timer_s : __timer_s)
+			);
+		}, 1000);
+						var	pmod = [];
+		var	p = {
+			atkf:	3,
+			atkm:	1,
+			def:	0,
+			deff:	0,
+			defm:	0,
+			mhp:	78,
+			hp:		78,
+			msp:	83,
+			sp:		83,
+			msta:	225,
+			sta:	225,
+			cmin:	0,
+			cmax:	0,
+			ctotal:	10.5,
+			emin:	0,
+			emax:	0,
+			etotal:	5.25,
+			conc:	0,
+			esquiva:	0.5		}
+						var	emod = [];
+		var	e = {
+			atkf:	0,
+			atkm:	2,
+			def:	0,
+			deff:	0,
+			defm:	0,
+			mhp:	60,
+			hp:		60,
+			msp:	179,
+			sp:		179,
+			msta:	51,
+			sta:	51,
+			cmin:	0,
+			cmax:	0,
+			ctotal:	10.5,
+			emin:	0,
+			emax:	0,
+			etotal:	5.25,
+			conc:	0,
+			esquiva:	0		}
+		
+		_xc				= false;
+		var _buffTimer	= setInterval(function () {
+			var html	= '';
+						
+			html	= '';
+			for(var i in pmod) {
+				var c	= pmod[i];
+				html	+= '<img class="i-buff" width="22" rel="' + c.id + '" role="p"  src="http://narutogame.com.br/images/' + c.i + '" />';
+			}
+			$('#cnPBuff').html(html);
+						
+			html	= '';
+			for(var i in emod) {
+				var c	= emod[i];
+				html	+= '<img class="i-buff" width="22" rel="' + c.id + '" role="e"  src="http://narutogame.com.br/images/' + c.i + '" />';
+			}
+			$('#cnEBuff').html(html);
+			
+			$('.i-buff').bind('mouseover', function () {
+				item_hover_f.apply(this, [null, pmod, emod])
+			})
+						.bind('mouseout', item_out_f);
+		}, 1200);
+	
+	$(document).ready(function () {
+		$('.pvp-atk-filter').on('click', function () {
+			if(this.no_attacks || is_animating) {
+				return;
+			}
+			var	_	= $(this);
+			$('.pvp-atk-filter').removeClass('pvp-atk-filter-selected');
+			_.addClass('pvp-atk-filter-selected');
+			$('#d-actionbar .atk').each(function () {
+				if(!$(this).hasClass('atk-' + _.data('filter'))) {
+					$(this).stop().hide();
+				} else {
+					$(this).stop().show('fade');
+				}
+			});
+		});
+		$('.pvp-atk-filter').each(function () {
+			if(!$('#d-actionbar .atk-' + $(this).data('filter')).length) {
+				$(this).hide();
+				this.no_attacks	= true;
+			}
+			if($(this).data('filter') == 'tai') {
+				$(this).trigger('click');
+			}
+		});
+		$('.atk img, .a-esquerda-batalha .d-buff div img').bind('click', function () {
+			var _this	= $(this);
+			var i		= _items[_this.attr('role')];
+			var action = 1;
+			if(i.ste) {
+				action = 3;
+				for(var f in _nt_disabled) {
+					if(_nt_disabled[f] == i.id) {
+						jalert('Esta habilidade ou outra mais forte já está ativada no momento!');
+						return;
+					}
+				}
+			} else if(i.st) {
+				action = 2;
+			}
+			if(i.me) {
+				action = 4;
+			}
+			if(_this.attr('id').match(/i-nt|atki-/i)) {
+				if(_this.attr('id').match(/atki-/i)) {
+					is_animating	= true;
+				}
+				$('.i-buff-status', $(this).parent().parent()).attr('src', $(this).attr('src'));
+				_this.hide('explode', 'slow', function () {
+					_this.show('drop', function () {
+						if(_this.attr('id').match(/atki-/i)) {
+							is_animating	= false;
+						}
+					});
+					//$('.ui-effects-wrapper').remove();
+				});
+			}
+			doAttack(i.id, action);
+			_this.trigger('mouseout');
+		}).bind('mouseover', item_hover_f)
+		  .bind('mouseout', item_out_f);
+		$('.a-esquerda-batalha .d-buff').bind('click', function () {
+			var _this = $(this);
+			if(!parseInt(_this.attr('shown'))) {
+				$('div', _this).show('drop');
+				_this.attr('shown', 1);
+			} else {
+				$('div', _this).hide();
+				_this.attr('shown', 0);
+			}
+		});
+	});
+	function item_hover_f(mi, pp, ee) {
+		var _this	= $(this);
+		var html	= '';
+		if(pp) {
+			pmod = pp;
+		}
+		if(ee) {
+			emod = ee;
+		}
+		if(_this.hasClass('i-buff')) {
+			mi = parseInt(mi);
+			if(_this.attr('role') == 'e') {
+				for(var g in emod) {
+					if(emod[g].id == _this.attr('rel')) {
+						var i	= emod[g];
+					}
+				}
+			} else {
+				if(!isNaN(mi)) {
+					var pmod = eval('p' + parseInt(mi) + 'mod');
+				}
+				for(var g in pmod) {
+					if(pmod[g].id == _this.attr('rel')) {
+						var i	= pmod[g];
+					}
+				}
+			}
+		} else {
+			if(_this.hasClass('pvp_p_atk')) {
+				var i	= __dyn_atk[_this.data('atk')];
+			} else {
+				var i	= _items[_this.attr('role')];
+			}
+		}
+		_tooltip	= $(document.createElement('DIV'));
+		$(document.body).append(_tooltip);
+		html = '<b>' + i.n + '</b>' + (!i.ub ? '<span style="float: right">x' + i.t + '</span>' : '') + '<hr />';
+		if(i.d) {
+			html += '<div>' + i.d + '</div><hr />';
+		}
+		if(i.els && i.els.length) {
+			html += '<b>Fraquezas:</b> (Recebe 50% a mais de dano, e desfere 50% a menos de dano)<br />' +
+					'<b>Resistências:</b> (Recebe 50% a menos de dano, e desfere 50% a mais de dano)<hr />';
+			for(var g in i.els) {
+				if(i.els[g]) {
+					html += 'Elemento: ' + i.els[g].n;
+					html += '<blockquote style="padding: 0px; padding-left: 20px; margin: 0px"><b>Fraquezas</b><br />';
+					for(var h in i.els[g].f) {
+						html += '' + i.els[g].f[h];
+					}
+					html += '</blockquote>';
+					html += '<blockquote style="padding: 0px; padding-left: 20px; margin: 0px"><b>Resistências</b><br />';
+					for(var h in i.els[g].r) {
+						html += '' + i.els[g].r[h];
+					}
+					html += '</blockquote>';
+				}
+			}
+		}
+		if(!i.st && !i.ste) { // Normal
+			if(i.atkf) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/atk_fisico.png' alt='Ataque ( Tai / Buk )' align='absmiddle'/>";
+				if(i.pre >= 100 && i.ll) {
+					html += ' Ataque ( Tai / Buk ): ' + i.atkf + ' + <span class="color_green">' +  percent(p.ctotal, i.atkf) + '</span> + (+' + p.atkf + ')<br />';
+				} else {
+					html += ' Ataque ( Tai / Buk ): ' + i.atkf + ' (+' + p.atkf + ')<br />';
+				}
+			}
+			if(i.atkm) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/atk_magico.png' alt='Ataque ( Nin / Gen )' align='absmiddle'/>";
+				if(i.pre >= 100 && i.ll) {
+					html += ' Ataque ( Nin / Gen ): ' + i.atkm + ' + <span class="color_green">' + percent(p.ctotal, i.atkm) + '</span> + (+' + p.atkm + ')<br />';
+				} else {
+					html += ' Ataque ( Nin / Gen ): ' + i.atkm +' (+' + p.atkm + ')<br />';
+				}
+			}
+			if(i.def) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/shield.png' alt='Defesa Base' align='absmiddle'/>";
+				if(i.pre >= 100 && i.ll) {
+					html += ' Defesa Base: ' + i.def + ' + <span class="color_green">' + percent(p.ctotal, i.def) + '</span> + (+' + p.def + ')<br />';
+				} else {
+					html += ' Defesa Base: ' + i.def + ' (+' + p.def + ')<br />';
+				}
+			}
+			if(i.deff) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/def_fisico.png' alt='Defesa ( Tai / Buk )' align='absmiddle'/>";
+				if(i.pre >= 100 && i.ll) {
+					html += ' Defesa ( Tai / Buk ): ' + i.deff + ' + <span class="color_green">' + percent(p.ctotal, i.deff) + '</span> + (+' + p.deff + ')<br />';
+				} else {
+					html += ' Defesa ( Tai / Buk ): ' + i.deff + ' (+' + p.deff + ')<br />';
+				}
+			}
+			if(i.defm) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/def_magico.png' alt='Defesa ( Nin / Gen )' align='absmiddle'/>";
+				if(i.pre >= 100 && i.ll) {
+					html += ' Defesa ( Nin / Gen ): ' + i.defm + ' + <span class="color_green">' + percent(p.ctotal, i.defm) + '</span> + (+' + p.defm + ')<br />';
+				} else {
+					html += ' Defesa ( Nin / Gen ): ' + i.defm + ' (+' + p.defm + ')<br />';
+				}
+			}
+		} else if(i.st) { // Buff
+									if(i.mo.p) {
+				html += 'Efeitos no seu personagem<br />';
+																											html += i.mo.pm.self_tai ? '<img src="http://narutogame.com.br/images/layout/icones/tai.png" /> Taijutsu: ' + i.mo.pm.self_tai + '<br />' : '';
+														html += i.mo.pm.self_ken ? '<img src="http://narutogame.com.br/images/layout/icones/ken.png" /> Bukijutsu: ' + i.mo.pm.self_ken + '<br />' : '';
+														html += i.mo.pm.self_nin ? '<img src="http://narutogame.com.br/images/layout/icones/nin.png" /> Ninjutsu: ' + i.mo.pm.self_nin + '<br />' : '';
+														html += i.mo.pm.self_gen ? '<img src="http://narutogame.com.br/images/layout/icones/gen.png" /> Genjutsu: ' + i.mo.pm.self_gen + '<br />' : '';
+														html += i.mo.pm.self_agi ? '<img src="http://narutogame.com.br/images/layout/icones/agi.png" /> Agilidade: ' + i.mo.pm.self_agi + '<br />' : '';
+														html += i.mo.pm.self_con ? '<img src="http://narutogame.com.br/images/layout/icones/conhe.png" /> Selo: ' + i.mo.pm.self_con + '<br />' : '';
+														html += i.mo.pm.self_forc ? '<img src="http://narutogame.com.br/images/layout/icones/forc.png" /> Força: ' + i.mo.pm.self_forc + '<br />' : '';
+														html += i.mo.pm.self_ene ? '<img src="http://narutogame.com.br/images/layout/icones/ene.png" /> Energia: ' + i.mo.pm.self_ene + '<br />' : '';
+														html += i.mo.pm.self_inte ? '<img src="http://narutogame.com.br/images/layout/icones/inte.png" /> Inteligência: ' + i.mo.pm.self_inte + '<br />' : '';
+														html += i.mo.pm.self_res ? '<img src="http://narutogame.com.br/images/layout/icones/defense.png" /> Resistência: ' + i.mo.pm.self_res + '<br />' : '';
+														html += i.mo.pm.self_atk_fisico ? '<img src="http://narutogame.com.br/images/layout/icones/atk_fisico.png" /> Ataque ( Tai / Buk ): ' + i.mo.pm.self_atk_fisico + '<br />' : '';
+														html += i.mo.pm.self_atk_magico ? '<img src="http://narutogame.com.br/images/layout/icones/atk_magico.png" /> Ataque ( Nin / Gen ): ' + i.mo.pm.self_atk_magico + '<br />' : '';
+														html += i.mo.pm.self_def_base ? '<img src="http://narutogame.com.br/images/layout/icones/shield.png" /> Defesa Base: ' + i.mo.pm.self_def_base + '<br />' : '';
+														html += i.mo.pm.self_def_fisico ? '<img src="http://narutogame.com.br/images/layout/icones/def_fisico.png" /> Defesa ( Tai / Buk ): ' + i.mo.pm.self_def_fisico + '<br />' : '';
+														html += i.mo.pm.self_def_magico ? '<img src="http://narutogame.com.br/images/layout/icones/def_magico.png" /> Defesa ( Nin / Gen ): ' + i.mo.pm.self_def_magico + '<br />' : '';
+														html += i.mo.pm.self_prec_fisico ? '<img src="http://narutogame.com.br/images/layout/icones/prec_tai.png" /> Precisão: ' + i.mo.pm.self_prec_fisico + '<br />' : '';
+														html += i.mo.pm.self_prec_magico ? '<img src="http://narutogame.com.br/images/layout/icones/prec_nin_gen.png" /> Precisão: ' + i.mo.pm.self_prec_magico + '<br />' : '';
+														html += i.mo.pm.self_crit_min ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Crítico Mínimo: ' + i.mo.pm.self_crit_min + '<br />' : '';
+														html += i.mo.pm.self_crit_max ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Crítico Máximo: ' + i.mo.pm.self_crit_max + '<br />' : '';
+														html += i.mo.pm.self_crit_total ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Incremento de Crítico: ' + i.mo.pm.self_crit_total + '<br />' : '';
+														html += i.mo.pm.self_esq_min ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Absorção Mínima: ' + i.mo.pm.self_esq_min + '<br />' : '';
+														html += i.mo.pm.self_esq_max ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Absorção Máxima: ' + i.mo.pm.self_esq_max + '<br />' : '';
+														html += i.mo.pm.self_esq_total ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Incremento de Absorção: ' + i.mo.pm.self_esq_total + '<br />' : '';
+														html += i.mo.pm.self_esq ? '<img src="http://narutogame.com.br/images/layout/icones/esquiva.png" /> Percepção: ' + i.mo.pm.self_esq + '<br />' : '';
+														html += i.mo.pm.self_det ? '<img src="http://narutogame.com.br/images/layout/icones/deter.png" /> Determinação: ' + i.mo.pm.self_det + '<br />' : '';
+														html += i.mo.pm.self_conv ? '<img src="http://narutogame.com.br/images/layout/icones/convic.png" /> Convicção: ' + i.mo.pm.self_conv + '<br />' : '';
+														html += i.mo.pm.self_conc ? '<img src="http://narutogame.com.br/images/layout/icones/target2.png" /> Concentração: ' + i.mo.pm.self_conc + '<br />' : '';
+														html += i.mo.pm.self_esquiva ? '<img src="http://narutogame.com.br/images/layout/icones/esquiva.png" /> Esquiva: ' + i.mo.pm.self_esquiva + '<br />' : '';
+																																																																																																																																																			}
+									if(i.mo.e) {
+				html += 'Efeitos no seu inimigo<br />';
+																																																																																																																																																																							html += i.mo.em.target_tai ? '<img src="http://narutogame.com.br/images/layout/icones/tai.png" /> Taijutsu: ' + i.mo.em.target_tai + '<br />' : '';
+														html += i.mo.em.target_ken ? '<img src="http://narutogame.com.br/images/layout/icones/ken.png" /> Bukijutsu: ' + i.mo.em.target_ken + '<br />' : '';
+														html += i.mo.em.target_nin ? '<img src="http://narutogame.com.br/images/layout/icones/nin.png" /> Ninjutsu: ' + i.mo.em.target_nin + '<br />' : '';
+														html += i.mo.em.target_gen ? '<img src="http://narutogame.com.br/images/layout/icones/gen.png" /> Genjutsu: ' + i.mo.em.target_gen + '<br />' : '';
+														html += i.mo.em.target_agi ? '<img src="http://narutogame.com.br/images/layout/icones/agi.png" /> Agilidade: ' + i.mo.em.target_agi + '<br />' : '';
+														html += i.mo.em.target_con ? '<img src="http://narutogame.com.br/images/layout/icones/conhe.png" /> Selo: ' + i.mo.em.target_con + '<br />' : '';
+														html += i.mo.em.target_forc ? '<img src="http://narutogame.com.br/images/layout/icones/forc.png" /> Força: ' + i.mo.em.target_forc + '<br />' : '';
+														html += i.mo.em.target_ene ? '<img src="http://narutogame.com.br/images/layout/icones/ene.png" /> Energia: ' + i.mo.em.target_ene + '<br />' : '';
+														html += i.mo.em.target_inte ? '<img src="http://narutogame.com.br/images/layout/icones/inte.png" /> Inteligência: ' + i.mo.em.target_inte + '<br />' : '';
+														html += i.mo.em.target_res ? '<img src="http://narutogame.com.br/images/layout/icones/defense.png" /> Resistência: ' + i.mo.em.target_res + '<br />' : '';
+														html += i.mo.em.target_atk_fisico ? '<img src="http://narutogame.com.br/images/layout/icones/atk_fisico.png" /> Ataque ( Tai / Buk ): ' + i.mo.em.target_atk_fisico + '<br />' : '';
+														html += i.mo.em.target_atk_magico ? '<img src="http://narutogame.com.br/images/layout/icones/atk_magico.png" /> Ataque ( Nin / Gen ): ' + i.mo.em.target_atk_magico + '<br />' : '';
+														html += i.mo.em.target_def_base ? '<img src="http://narutogame.com.br/images/layout/icones/shield.png" /> Defesa Base: ' + i.mo.em.target_def_base + '<br />' : '';
+														html += i.mo.em.target_def_fisico ? '<img src="http://narutogame.com.br/images/layout/icones/def_fisico.png" /> Defesa ( Tai / Buk ): ' + i.mo.em.target_def_fisico + '<br />' : '';
+														html += i.mo.em.target_def_magico ? '<img src="http://narutogame.com.br/images/layout/icones/def_magico.png" /> Defesa ( Nin / Gen ): ' + i.mo.em.target_def_magico + '<br />' : '';
+														html += i.mo.em.target_prec_fisico ? '<img src="http://narutogame.com.br/images/layout/icones/prec_tai.png" /> Precisão: ' + i.mo.em.target_prec_fisico + '<br />' : '';
+														html += i.mo.em.target_prec_magico ? '<img src="http://narutogame.com.br/images/layout/icones/prec_nin_gen.png" /> Precisão: ' + i.mo.em.target_prec_magico + '<br />' : '';
+														html += i.mo.em.target_crit_min ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Crítico Mínimo: ' + i.mo.em.target_crit_min + '<br />' : '';
+														html += i.mo.em.target_crit_max ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Crítico Máximo: ' + i.mo.em.target_crit_max + '<br />' : '';
+														html += i.mo.em.target_crit_total ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Incremento de Crítico: ' + i.mo.em.target_crit_total + '<br />' : '';
+														html += i.mo.em.target_esq_min ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Absorção Mínima: ' + i.mo.em.target_esq_min + '<br />' : '';
+														html += i.mo.em.target_esq_max ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Absorção Máxima: ' + i.mo.em.target_esq_max + '<br />' : '';
+														html += i.mo.em.target_esq_total ? '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" /> Incremento de Absorção: ' + i.mo.em.target_esq_total + '<br />' : '';
+														html += i.mo.em.target_esq ? '<img src="http://narutogame.com.br/images/layout/icones/esquiva.png" /> Percepção: ' + i.mo.em.target_esq + '<br />' : '';
+														html += i.mo.em.target_det ? '<img src="http://narutogame.com.br/images/layout/icones/deter.png" /> Determinação: ' + i.mo.em.target_det + '<br />' : '';
+														html += i.mo.em.target_conv ? '<img src="http://narutogame.com.br/images/layout/icones/convic.png" /> Convicção: ' + i.mo.em.target_conv + '<br />' : '';
+														html += i.mo.em.target_conc ? '<img src="http://narutogame.com.br/images/layout/icones/target2.png" /> Concentração: ' + i.mo.em.target_conc + '<br />' : '';
+														html += i.mo.em.target_esquiva ? '<img src="http://narutogame.com.br/images/layout/icones/esquiva.png" /> Esquiva: ' + i.mo.em.target_esquiva + '<br />' : '';
+							}
+					}
+		if(!i.ste && !i.ub && !i.st) {
+			if (i.hab==1){
+				html += "<img src='http://narutogame.com.br/images/layout/icones/prec_tai.png' alt='Precisão' align='absmiddle'/> ";
+			} else {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/prec_nin_gen.png' alt='Precisão' align='absmiddle'/> ";
+			}
+			var err_chance	= (100 - i.pre);
+			if(err_chance > 100) {
+				err_chance	= 100;
+			}
+			html += 'Precisão <span class="color_green">' + Math.round(i.pre < 0 ? 0 : i.pre, 2) + '%</span>' + (i.pre < 100 ? ' (<span class="color_red"> ' + Math.round(err_chance, 2) + '%</span> de Chance de Erro)': '') + '<br />';
+			if(i.pre >= 100 && i.ll) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/target2.png' alt='Chance Crítico' align='absmiddle'/> ";
+				html += 'Chance Crítico ( <span class="color_green">' + p.conc + '% + <span style="color: #B01AA6 !important">' + i.enhance_crit + '%</span></span>)<br />';
+			}
+			html += '<hr />';
+		} else if(i.ste) {
+			
+			if(i.atkf) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/atk_fisico.png' alt='Ataque ( Tai / Buk )' align='absmiddle'/>";
+				html += ' Ataque ( Tai / Buk ): +' + i.atkf + '<br />';
+			}
+			if(i.atkm) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/atk_magico.png' alt='Ataque ( Nin / Gen )' align='absmiddle'/>";
+				html += ' Ataque ( Nin / Gen ): +' + i.atkm + '<br />';
+			}
+			if(i.tai) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/tai.png' alt='Taijutsu' align='absmiddle'/>";
+				html += ' Taijutsu: +' + i.tai + '<br />';
+			}
+			if(i.ken) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/ken.png' alt='Bukijutsu' align='absmiddle'/>";
+				html += ' Bukijutsu: +' + i.ken + '<br />';
+			}
+			if(i.nin) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/nin.png' alt='Ninjutsu' align='absmiddle'/>";
+				html += ' Ninjutsu: +' + i.nin + '<br />';
+			}
+			if(i.gen) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/gen.png' alt='Genjutsu' align='absmiddle'/>";
+				html += ' Genjutsu: +' + i.gen + '<br />';
+			}
+			if(i.agi) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/agi.png' alt='Agilidade' align='absmiddle'/>";
+				html += ' Agilidade: +' + i.agi + '<br />';
+			}
+			if(i.con) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/conhe.png' alt='Selo' align='absmiddle'/>";
+				html += ' Selo: +' + i.con + '<br />';
+			}
+			if(i.ene) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/ene.png' alt='Energia' align='absmiddle'/>";
+				html += ' Energia: +' + i.ene + '<br />';
+			}
+			if(i.forc) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/forc.png' alt='Força' align='absmiddle'/>";
+				html += ' Força: +' + i.forc + '<br />';
+			}
+			if(i.inte) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/inte.png' alt='Inteligência' align='absmiddle'/>";
+				html += ' Inteligência: +' + i.inte + '<br />';
+			}
+			if(i.res) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/defense.png' alt='Resistência' align='absmiddle'/>";
+				html += ' Resistência: +' + i.res + '<br />';
+			}
+			if(i.def) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/shield.png' alt='Defesa Base' align='absmiddle'/>";
+				html += ' Defesa Base: ' + i.def + '<br />';
+			}
+			if(i.precf) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/prec_tai.png' alt='Precisão' align='absmiddle'/>";
+				html += ' Precisão: ' + i.precf + '<br />';
+			}
+			if(i.precm) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/prec_nin_gen.png' alt='Precisão' align='absmiddle'/>";
+				html += ' Precisão: ' + i.precm + '<br />';
+			}
+			/*if(i.cmin) {
+				html += ' Crítico Mínimo: ' + i.cmin + ' %<br />';
+			}
+			if(i.cmax) {
+				html += ' Crítico Máximo: ' + i.cmax + ' %<br />';
+			}
+			if(i.emin) {
+				html += ' Absorção Mínima: ' + i.cmin + ' %<br />';
+			}
+			if(i.emax) {
+				html += ' Absorção Máxima: ' + i.cmax + ' %<br />';
+			}*/
+			if(i.ctotal) {
+				html += ' Incremento de Crítico: ' + i.ctotal + ' %<br />';
+			}
+			if(i.etotal) {
+				html += ' Incremento de Absorção: ' + i.etotal + ' %<br />';
+			}
+			if(i.esq) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/esquiva.png' alt='Percepção' align='absmiddle'/>";
+				html += ' Percepção: ' + i.esq + ' %<br />';
+			}
+			if(i.det) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/deter.png' alt='Determinação' align='absmiddle'/>";
+				html += ' Determinação: ' + i.det + ' %<br />';
+			}
+			if(i.conv) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/convic.png' alt='Convicção' align='absmiddle'/>";
+				html += ' Convicção: ' + i.conv + ' %<br />';
+			}
+			if(i.conc) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/target2.png' alt='Concentração' align='absmiddle'/>";
+				html += ' Concentração: ' + i.conc + ' %<br />';
+			}
+			if(i.esquiva) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/esquiva.png' alt='Esquiva' align='absmiddle'/>";
+				html += ' Esquiva: ' + i.esquiva + ' %<br />';
+			}
+			if(i.b_hp) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/p_hp.png' alt='Vida' align='absmiddle'/>";
+				if(i.me) {
+					html += ' Vida: ' + i.b_hp + '<br />';
+				} else {
+					html += ' Vida: ' + i.b_hp + '%<br />';
+				}
+			}
+			if(i.b_sp) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/p_chakra.png' alt='Chakra' align='absmiddle'/>";
+				if(i.me) {
+					html += ' Chakra: ' + i.b_sp + ' <br />';
+				} else {
+					html += ' Chakra: ' + i.b_sp + ' %<br />';
+				}
+			}
+			if(i.b_sta) {
+				html += "<img src='http://narutogame.com.br/images/layout/icones/p_stamina.png' alt='Stamina' align='absmiddle'/>";
+				if(i.me) {
+					html += ' Stamina: ' + i.b_sta + '<br />';
+				} else {
+					html += ' Stamina: ' + i.b_sta + '%<br />';
+				}
+			}
+		}
+		if((i.st || i.ste) && !i.ub) {
+			html += '<br /><b>Não passa o turno ao utilizar</b><br />';
+		}
+		if(i.tr) {
+			html += 'Intervalo de uso: ' + i.tr + ' turno(s)' + (i.trl ? '(Faltando ' + i.trl +' turno(s))' : '') + '<br />';
+		}
+		if(i.du) {
+			html += 'Duração: ' + i.du + ' turno(s)<br />';
+		}
+		if(!i.ub && (i.chp || i.csp || i.csta)) {
+			html 	+= '<hr />Consome: ';
+			if(i.chp) {
+				html	+= '<img src="http://narutogame.com.br/images/layout/icones/p_hp.png" align="absmiddle" /> ' + i.chp;
+			}
+			if(i.csp) {
+				if(i.chp) {
+					html	+= ' / ';
+				}
+				html	+= 'Consome: <img src="http://narutogame.com.br/images/layout/icones/p_chakra.png" align="absmiddle"/> ' + i.csp;
+			}
+			if(i.csta) {
+				if(i.chp || i.csp) {
+					html	+= ' / ';
+				}
+				html	+= '<img src="http://narutogame.com.br/images/layout/icones/p_stamina.png" align="absmiddle" /> ' + i.csta;
+			}
+		}
+		if (i.war_timer) {
+			html	+= '<hr /><b>Tempo restante:</b> ' + (i.war_timer.days < 1 ? 'Menos de 24 horas' : i.war_timer.days + ' dia(s) e ' + i.war_timer.hours + ' hora(s)');
+		}
+		_tooltip.addClass('atk-tooltip')
+				.css('top', _this.offset().top)
+				.html(html)
+				.show('fade');
+		var margin	= (($(window).width() - 1000) / 2) - 50;
+		var left	= _this.offset().left;
+		if((left - margin) + _tooltip.width() > 1000) {
+			left	= _this.offset().left - _tooltip.width() - 23;
+		} else {
+			left	+=  + _this.width() + 3;
+		}
+		_tooltip.css('left', left);
+	}
+	function item_out_f() {
+		if(_tooltip) {
+			_tooltip.remove();
+			$('.atk-tooltip').remove();
+		}
+	}
+	$('.d-buff .i-buff-status').css('opacity', .2);
+	var _check_timer = setInterval(function () {
+		for(var i in _items) {
+			if(!_check_triggers[i]) {
+				_check_triggers[i] = {
+					is_locked:	false
+				}
+			}
+			var c	= _items[i];
+			var ct	= _check_triggers[i];
+			// Desativa
+			if(c.trl && !ct.is_locked) {
+				ct.is_locked = true;
+				$('#atki-' + c.id).animate({opacity: .3});
+			}
+			if(c.trl){
+				$('.atki-' + c.id).html(c.trl);
+			}
+			// Ativa
+			if(!c.trl && ct.is_locked) {
+				ct.is_locked = false;
+				var o	= $('#atki-' + c.id);
+				if(_cur_atk_tab == o.parent().attr('class').replace(/[^\d]+/, '')) {
+					o.animate({opacity: 1})
+					 .parent().effect('highlight', null, 500);
+				} else {
+					$('#atki-' + c.id).css('opacity', 1);
+				}
+			}
+		}
+	}, 700)
+		$(document).ready(function(e) {
+		setPValue2(p.hp,  (p.mhp  || 1), "Vida",	$("#cnPHP"),  1);
+		setPValue2(p.sp,  (p.msp  || 1), "Chakra",	$("#cnPSP"),  1);
+		setPValue2(p.sta, (p.msta || 1), "Stamina",	$("#cnPSTA"), 1);
+		setPValue2(60,  (60  || 1), "Vida",	$("#cnEHP"),  1);
+		setPValue2(179,  (179  || 1), "Chakra",	$("#cnESP"),  1);
+		setPValue2(51, (51 || 1), "Stamina",	$("#cnESTA"), 1);
+	});
+			/*
+			_this.parent().effect('highlight');
+		_this.animate({opacity: 1});
+	*/
+	function numericAnimateTo(v, text, o) {
+		var o = $(o);
+		var intervals	= v.toString().length;
+		var ot			= v.toString();
+		var cc			= 0;
+		var cc2			= intervals;
+		var c			= 0;
+		var t			= "";
+		var rnd			= 512384;
+		if(parseInt(o.html()) == parseInt(v)) {
+			return;
+		}
+		var _i = setInterval(function () {
+			if(cc == intervals) {
+				o.html(text + " " + ot);
+				clearInterval(_i);
+				return;
+			}
+			if(!(c % 6)) {
+				cc2--;
+				if(ot[cc2]) {
+					t = ot[cc2].toString() + t;
+				}
+				rnd = 1024 * Math.abs(cc2);
+				cc++;
+			}
+			o.html(text + " " + Math.round(Math.random() * rnd) + t);
+			c++;
+		}, 50);
+	}
+</script>
+	<div align="center" style="position: relative; top: 5px">
+	<script type="text/javascript">
+		google_ad_client = "ca-pub-9166007311868806";
+		google_ad_slot = "2217558578";
+		google_ad_width = 728;
+		google_ad_height = 90;
+	</script>
+	<!-- NG - Combate -->
+	<script type="text/javascript"
+	src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+	</div>
+</div>		<div class="break"></div>
+	</div>
+	<div class="break"></div>
+</div>
+<div class="break"></div>
+<div id="l-banner" style="position: absolute; height: auto; width: 160px; top: -200px; right: -180px; z-index:1000;">
+	<div style="position:fixed">
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-9166007311868806";
+	google_ad_slot = "5168311778";
+	google_ad_width = 300;
+	google_ad_height = 600;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+	</div>
+</div>
+</div>
+<div class="break"></div>
+</div>
+</div>
+<div id="rodape-fim"></div>
+<div id="rodape">
+    	<div id="parceiros">
+		    <div class="parceiros_logos">
+					<a href="https://borutogame.com.br"><img src="http://narutogame.com.br/images//layout/logo/bg.png" alt="Boruto Game" border="0" width="200"></a>
+			</div>
+			<div class="parceiros_logos">
+					<a href="https://animeallstarsgame.com.br"><img src="http://narutogame.com.br/images//layout/logo/aasg.png" alt="Anime All Stars Game" border="0" width="180"></a>
+			</div>
+            <div class="parceiros_logos">
+            		<a href="https://cdzgame.com.br"><img src="http://narutogame.com.br/images/layout/rodape/cdzg-logo.png" alt="CDZ Game" border="0" width="180"/></a>
+            </div>
+			 <div class="parceiros_logos">
+            		<a href="https://dragonballgame.com.br"><img src="http://narutogame.com.br/images/layout/rodape/dbg-logo.png" alt="Dragon Ball Game" border="0" width="180"/></a>
+            </div>
+            <div class="parceiros_logos">
+            		<a href="https://bleachgame.com.br"><img src="http://narutogame.com.br/images/layout/rodape/bg-logo.png" alt="Bleach Game" border="0" width="180"/></a>
+            </div>
+    	</div>
+	        <div id="texto">
+            <p class="text_rodape"> <span dir="ltr">&copy;2009 - 2016&nbsp;</span><b>Naruto Game</b> - <a href="index.php?secao=aviso_legal">Aviso Legal</a> - <a href="index.php?secao=politica_privacidade">Política de Privacidade</a> - <a href="index.php?secao=termos_uso">Termos de Uso</a> - <a href="index.php?secao=regras_punicoes">Regras e Punições</a><br />
+            Personagens e ilustrações originais © Copyright 2002 por Masashi Kishimoto. Todos os direitos reservados </p>
+        </div>
+    <div id="rodape_interno"></div>
+</div>
+<div id="cnInventario"></div>
+<div id="cnProfile"></div>
+<div id="cnCla"></div>
+<link href="css/ui-darkness/jquery-ui-darkness.css?c=1" rel="stylesheet" type="text/css"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="css/tutorial.css" rel="stylesheet" type="text/css"/>
+<link href="css/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.booklet.css?c=1" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.smartspinner.css" rel="stylesheet" type="text/css"/>
+<script>
+  head.js ("https://www.google-analytics.com/ga.js", function () {
+    var tracker=_gat._getTracker ("UA-5481713-1");
+    tracker._trackPageview ();
+  });
+</script>
+		<style type="text/css">
+	#chat-v2 {
+		position: fixed;
+		bottom: 0px;
+		left: 20px;
+		width: 282px;
+		overflow: hidden;
+		z-index: 12;
+	}
+	
+	#chat-v2 .title {
+		background-image: url(http://narutogame.com.br/images/layout/chat/chat_title.png);
+		padding-left: 5px;
+		margin-bottom: 1px;
+	}
+	
+	#chat-v2 .title .titulo-home {
+		width: 282px !important;
+		cursor: pointer
+	}
+	#chat-v2 .chat-bg {
+		background-color: #333;
+		margin-top: -1px;
+		padding-top: 1px;		
+	}
+	
+	#chat-v2 .messages {
+		height: 312px;
+		width: 282px;
+		margin-bottom: 1px;
+		overflow: auto;
+		word-wrap: break-word;
+		position: relative
+	}
+	#chat-v2 .selector {
+		width: 282px;
+		height: 43px;
+		position: relative
+	}
+	#chat-v2 .selector ul {
+		position: absolute;
+		bottom: 0px;
+		margin-bottom: 29px;
+		left: 8px;
+		background-color: #333;
+		width: 82px;
+		padding-left: 23px;
+		border-radius: 5px;
+		padding-bottom: 10px;
+	}
+	#chat-v2 .selector ul li {
+		height: 20px;
+		padding-top: 8px;
+		margin-bottom: 2px;
+		cursor: pointer
+	}
+	
+	#chat-v2 .selector #message {
+		width: 206px;
+		border-radius: 5px;
+		background-color: #333;
+		border: none;
+		height: 27px;
+		margin-left: 8px;
+		margin-top: 7px;
+		padding-left: 60px;
+		color: #999
+	}
+	
+	#chat-v2 .selector #as {
+		position: absolute;
+		right: 10px;
+		bottom: 11px;
+	}
+	
+	#chat-v2 .selector-trigger {
+		background-image: url(http://narutogame.com.br/images/layout/chat/chat_channel.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 15px;
+		top: 16px;
+		padding-left: 18px;
+		font-size: 11px;
+		cursor: pointer
+	}
+	textarea:focus, input:focus{
+		outline: none;
+	}
+	
+	#chat-v2 .chat-world {
+		color: #B2B2B2
+	}
+	#chat-v2 .chat-village {
+		color: #B2B2B2
+	}
+	
+	#chat-v2 .chat-gm {
+		color: #FFB34F !important
+	}
+	
+	#chat-v2 .chat-gm span {
+		background-image: url(http://narutogame.com.br/images/layout/chat/star.png);
+		background-repeat: no-repeat;
+		padding-left: 20px;		
+	}
+	#chat-v2 .chat-org {
+		color: #4F72C4
+	}
+	#chat-v2 .chat-team {
+		color: #72CFD6
+	}
+	#chat-v2 .chat-message {
+		padding-left: 8px;
+		padding-right: 8px;
+		line-height: 16px;
+		margin-bottom: 3px
+	}
+	
+	#chat-v2 .chat-system {
+		display: block;
+		text-align: center;
+		background-color: #FFCC99;
+		margin: 4px;
+		border-radius: 5px;
+		padding: 4px;
+		font-weight: bold;
+		border: solid 1px #C24F15;
+		color: #C24F15;		
+	}
+	#chat-v2 .chat-warn {
+		display: block;
+		text-align: center;
+		background-color: #f95353;
+		margin: 4px;
+		border-radius: 5px;
+		padding: 4px;
+		font-weight: bold;
+		border: solid 1px #790505;
+		color: #FFF;		
+	}
+	
+	.chat-pvt {
+		position: fixed;
+		bottom: 378px;
+		left: 265px;
+		cursor: pointer;
+		z-index: 13
+	}
+	
+	.chat-pvt .l {
+		background-image: url(http://narutogame.com.br/images//layout/chat/chat_notification_l.png);	
+		width: 22px;
+	}
+	.chat-pvt .r {
+		background-image: url(http://narutogame.com.br/images//layout/chat/chat_notification_r.png);	
+		background-position: top right;
+		margin-left: -10px;
+		padding-right: 12px;
+		padding-top: 3px;
+		height: 27px !important;
+		font-weight: bold;
+	}
+	
+	.chat-pvt .l, .chat-pvt .r {
+		height: 30px;
+		float: left
+	}
+	
+	#chat-v2 .chat-user {
+		font-weight: bold;
+		cursor: pointer
+	}
+	
+	.reply-box {
+		background-image: url(http://narutogame.com.br/images//layout/chat/chat_bg_private.png);
+		width: 247px;
+		height: 122px;
+		position: fixed;
+		left: 330px;
+		bottom: 10px;
+		z-index: 1000000;
+	}
+	
+	.reply-box .next, .reply-box .close {
+		position: absolute;
+		right: 10px;
+		bottom: 13px;
+		background-repeat: no-repeat;
+		background-image: url(http://narutogame.com.br/images/layout/chat/chat_next.png);
+		background-position: right bottom;
+		padding-right: 14px;
+		cursor: pointer;		
+	}
+	
+	.reply-box .reply {
+		position: absolute;
+		bottom: 13px;
+		left: 23px;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-image: url(http://narutogame.com.br/images/layout/chat/chat_reply.png);
+		padding-left: 14px;		
+		cursor: pointer;		
+	}
+	
+	.reply-box .close {
+		background-image: none !important;
+	}
+	
+	.reply-box .from {
+		position: absolute;
+		left: 23px;
+		top: 8px;
+		font-weight: bold;		
+	}
+	
+	.reply-box .wait {
+		position: absolute;
+		bottom: 13px;
+		margin-left: 23px;
+		width: 216px;
+		text-align: center;
+		font-weight: bold;		
+	}
+	
+	.reply-box .text {
+		position: absolute;
+		left: 23px;
+		top: 30px;
+		width: 216px;
+		display: block;		
+	}
+</style>
+<div id="chat-v2">
+	<div class="title">
+		<div class="titulo-home" style="margin-left: 50px; padding-top: 5px;"><p>Chat Naruto Game</p></div>
+	</div>
+	<div class="chat-bg">
+		<div class="messages">
+			<div align="center" class="wait">Chat disponivel no level 7</div>
+		</div>
+		<div class="selector">
+						<ul style="display: none">
+				<li data-channel="world" data-cmd="m">Mundo</li>
+				<li data-channel="village" data-cmd="v">Folha</li>
+																<li data-channel="battle" data-cmd="b">Batalha</li>
+								
+							</ul>
+			<div class="selector-trigger">Mundo</div>
+            			<input type="checkbox" id="as" checked="checked" class="auto-scroll" />
+					</div>
+	</div>
+</div>
+<script type="text/javascript">
+	(function () {
+		
+		var __chat_socket	= io.connect('http://narutogame.com.br:2934');
+		var has_type		= false;
+		var	channel			= 'village';
+		var	real_channel	= 'village';
+		var	pvt_dest		= 0;
+		var	last_pvt_index	= 0;
+		var	trigger_pvt		= false;
+		var pvt_data		= null;
+		var last_msg		= new Date();
+		var blocked			= [];
+		var pm_total		= 0;
+		
+		function resize_selector() {
+			var	w	= 266;
+			var	tw	= $('#chat-v2 .selector-trigger').outerWidth() + 10;
+			
+			$('#chat-v2 input[name=message]').css({
+				width:	w-tw,
+				paddingLeft: tw
+			});		
+		}
+		function diff_in_secs(d1, d2) {
+			var diff		= d2 - d1,
+				sign		= diff < 0 ? -1 : 1,
+				milliseconds,
+				seconds,
+				minutes,
+				hours,
+				days;
+			
+			diff	/= sign;
+			diff	= (diff-(milliseconds=diff%1000))/1000;
+			diff	= (diff-(seconds=diff%60))/60;
+			diff	= (diff-(minutes=diff%60))/60;
+			days	= (diff-(hours=diff%24))/24;
+			return seconds;
+		}
+		
+		__chat_socket.on('error', function () {
+			$('#chat-v2 .messages').html(
+				'<div style="padding: 10px">Ocorreu um problema ao conectar ao chat.<br /><br />Você pode ter algum firewall(isso inclui programas anti-hack de jogos on-line)' +
+				' ou anti-vírus bloqueando o chat.<br /><br />Se sua rede está conectada através de um proxy, o proxy pode estar bloqueando as conexões ou não suporta conexões via websocket</div>'
+			);
+		});
+	
+		__chat_socket.on('connect', function () {
+			__chat_socket.emit('register', {
+				data: 'ec6fd56818670451543ab010c7d84fc2c66ad22f134a455e616c23f36331e875219b75718e94a9c8cfdb99e41665629113342e99d77f5a1c2b2a93ade493f329f7f820c1f07f9aaf0c82d064b2a11f5d2ed3bd19af11870fe6a10f2c82b2bc098735ecceeabea5f2b2dc2ac851e85eb32de91dff409ef79543e8545229f9ac372eea5fd89548a1abaceec6a478f335e3c53c339dd3873aeb35cb2d9903a1eba1cbb2ef278cfa4b4726cbbfe449ac1bc5876d1b4e68911ee9ef8448831b2048578f0948dc79d82a975ae67b32c591ae6a'
+			});
+			
+			$('#chat-v2 .messages .wait').remove();
+		});
+		
+		__chat_socket.on('blocked-broadcast', function (data) {
+			blocked	= data;
+		});
+		__chat_socket.on('pvt-broadcast', function (data) {
+			var	container	= $('.chat-pvt .r');
+			
+			pvt_data	= data;
+			
+			if(!container.length) {
+				if(!data.length) {
+					return;
+				}
+				
+				var	l	= $(document.createElement('DIV')).addClass('l');
+				var	r	= $(document.createElement('DIV')).addClass('r');
+				var	c	= $(document.createElement('DIV')).addClass('chat-pvt');
+			
+				c.append(l, r);
+				container	= r;
+				$(document.body).append(c);
+				
+				c.on('click', function () {
+					function dispatch_pvt_read(id) {
+						__chat_socket.emit('pvt-was-read', {index: id});
+					}
+					if(this.shown) {
+						$('.reply-box').remove();
+						this.shown	= false;
+						
+						return;
+					}
+					
+					this.shown			= true;
+					var	_this			= this;
+					
+					var	msg_container	= $(document.createElement('DIV')).addClass('reply-box');
+					var	msg_reply		= $(document.createElement('A')).html('Responder').addClass('reply');
+					var	msg_next		= $(document.createElement('A')).html(pvt_data.length == 1 ? 'Fechar' : 'Próxima').addClass(pvt_data.length == 1 ? 'close' : 'next');
+					var	msg_from		= $(document.createElement('SPAN')).html(pvt_data[0].from).addClass('from');
+					var	msg_text		= $(document.createElement('SPAN')).html(pvt_data[0].message).addClass('text');
+					
+					msg_reply.on('click', function () {
+						$('#chat-v2 .selector-trigger')
+							.html(pvt_data[0].from)
+							.css({backgroundImage: 'url(http://narutogame.com.br/images/layout/chat/chat_pvt.png)'})
+							[0].shown = false;
+	
+						channel		= 'private';
+						pvt_dest	= pvt_data[0].id;
+		
+						$('#chat-v2 input[name=message]').focus();
+						resize_selector();						
+					});
+					
+					if(pvt_data.length == 1) {
+						msg_next.on('click', function () {
+							dispatch_pvt_read(last_pvt_index);
+							
+							msg_container.remove();
+							c.remove();
+						});
+					} else {
+						msg_next.on('click', function () {
+							msg_reply.remove();
+							msg_next.remove();
+							msg_from.remove();
+							msg_text.remove();
+							// No próximo broadcast ele recarrega =)
+							trigger_pvt	= true;
+							_this.shown	= false;
+							
+							msg_container.append('<div class="wait">Aguarde...</div>');
+							dispatch_pvt_read(last_pvt_index);
+							pm_total--;
+						});						
+					}
+					
+					msg_container.append(msg_from, msg_text, msg_reply, msg_next);
+					$(document.body).append(msg_container);					
+				});
+			}
+			
+			container.html(data.length);
+			
+						if(data.length > pm_total) {
+				pm_total	= data.length;
+				$(document.body).append('<audio autoplay><source src="http://narutogame.com.br/images/media/pm.wav" type="audio/wav" /></audio>');
+			}
+						
+			if(!data.length && container.length) {
+				pm_total	= 0;
+				
+				container.remove();
+			}
+			
+			last_pvt_index	= data[0].index;
+			
+			if(trigger_pvt) {
+				$('.reply-box').remove();
+				
+				if(data.length) {
+					container.trigger('click');
+				}
+					
+				trigger_pvt	= false;
+			}
+			if(!parseInt($.cookie('chatv2_show'))) {
+				$('.chat-pvt').css({bottom: 30});
+			} else {
+				$('.chat-pvt').css({bottom: 378});
+			}
+		});
+		__chat_socket.on('broadcast', function (data) {
+			/*if(data.channel == 'system' || data.channel == 'warn') {
+				$('#chat-v2 .messages').append('<div class="chat-message chat-' + data.channel + '"><div>Aviso de sistema</div><div>' + data.message + '</div></div>')				
+			
+				return;	
+			}
+			*/
+			if(data.channel != real_channel) {
+				return;	
+			}
+			
+			if(!parseInt($.cookie('chatv2_show'))) {
+				return;	
+			}
+			
+			// GLobal user block -->
+				var is_blocked	= false;
+				
+				blocked.forEach(function (id) {
+					if(parseInt(data.user_id) == parseInt(id)) {
+						is_blocked	= true;
+					}
+				});
+				
+				if(is_blocked) {
+					return;
+				}
+			// <--
+			
+			$('#chat-v2 .messages').append(
+				'<div ' + (data.color ? 'style="color: ' + data.color + '!important"' : '') + ' class="chat-message chat-' + data.channel + '' + (data.gm ? ' chat-gm' : '') + '">' +
+				'<span class="chat-user" data-id="' + data.id + '" data-from="' + data.from + '">' + (data.icon || '') + data.from + '</span>:&nbsp;' + data.message + '</div>')
+	
+			$('#chat-v2 .messages .chat-user').each(function() {
+				if(this.with_callback) {
+					return;
+				}
+	
+				this.with_callback	= true;
+				var	_				= $(this);
+	
+				_.on('click', function() {
+					if(channel == 'block') {
+						$('#chat-v2 input[name=message]').val($(this).data('from')).focus();
+					
+						return;
+					}
+				
+					$('#chat-v2 .selector-trigger')
+						.html(this.innerHTML)
+						.css({backgroundImage: 'url(http://narutogame.com.br/images/layout/chat/chat_pvt.png)'})
+						[0].shown = false;
+					$('#chat-v2 .selector ul').animate({opacity: 0}, function () {
+						$(this).hide()
+					});
+	
+					channel		= 'private';
+					pvt_dest	= _.data('id');
+	
+					$('#chat-v2 input[name=message]').focus();
+					resize_selector();
+				});
+			});
+			
+			if(has_type) {
+				$('#chat-v2 .messages').scrollTop(1000000);				
+				has_type	= false;
+			}
+			
+			if($('#chat-v2 .auto-scroll:checked').length) {
+				$('#chat-v2 .messages').scrollTop(1000000);				
+			}
+		});
+	
+				$(document).ready(function(e) {
+			$('#chat-v2 input[name=message]').on('keyup', function(e) {
+				var	message	= $(this);
+				
+				if(e.keyCode == 13 && this.value) {
+											var now	= new Date();
+						
+						if(diff_in_secs(last_msg, now) < 10) {
+							return;
+						}
+										
+					var broadcast_data	= {
+						message:	this.value,
+						channel:	channel,
+						dest:		pvt_dest
+					};
+					
+					__chat_socket.emit('message', broadcast_data);
+					
+					this.value	= '';
+					has_type	= true;
+					
+					if(channel == 'private') {
+						$('#chat-v2 .selector ul li').each(function () {
+							if($(this).data('channel') == real_channel) {
+								$(this).trigger('click');	
+							}
+						});
+					} else {
+													message.attr('disabled', 'disabled');
+		
+							last_msg	= now;
+							var _iv1	= setInterval(function () {
+								var	now	= new Date();
+		
+								if(diff_in_secs(last_msg, now) < 10) {
+									message.val('Aguarde: ' + (10 - diff_in_secs(last_msg, now)) + ' segundo(s)');
+								} else {
+									message.removeAttr('disabled').val('');
+									
+									clearInterval(_iv1);
+								}
+							}, 1000);
+											}
+				}
+				
+				if(e.keyCode == 32) {
+					$('#chat-v2 .selector ul li').each(function () {
+						var _	= $(this);
+						
+						if(message.val().match(new RegExp('\^/' + _.data('cmd')))) {
+							_.trigger('click');	
+							
+							message.val('');
+						}
+					});
+					
+					if(message.val().match(/^@[^\s]+/)) {
+						var	dest	= message.val().replace(/[@<>]/img, '');
+						
+						$('#chat-v2 .selector-trigger')
+							.html(dest)
+							.css({backgroundImage: 'url(http://narutogame.com.br/images/layout/chat/chat_pvt.png)'})
+							[0].shown = false;						
+						message.val('');
+						channel		= 'private';
+						pvt_dest	= dest;
+						
+						resize_selector();
+					}
+					
+					if(message.val().match('^/block')) {
+						$('#chat-v2 .selector-trigger')
+							.html('Bloquear')
+							.css({backgroundImage: 'url(http://narutogame.com.br/images/layout/chat/chat_blocked.png)'})
+							[0].shown = false;						
+						
+						channel	= 'block';
+						
+						message.val('');
+						resize_selector();
+					}
+				}
+			}).on('focus', function () {
+				$('#chat-v2 #as').stop().animate({opacity: 0});
+			}).on('blur', function () {
+				$('#chat-v2 #as').stop().animate({opacity: 1});				
+			}).on('pvt-switch', function (e, dest) {
+				$('#chat-v2 .selector-trigger')
+					.html(dest)
+					.css({backgroundImage: 'url(http://narutogame.com.br/images/layout/chat/chat_pvt.png)'})
+					[0].shown = false;						
+				channel		= 'private';
+				pvt_dest	= dest;
+				
+				resize_selector();
+			});
+	
+			$('#chat-v2 .selector ul li').on('click', function () {
+				$('#chat-v2 .selector-trigger')
+					.html(this.innerHTML)
+					.css({backgroundImage: 'url(http://narutogame.com.br/images/layout/chat/chat_channel.png)'})
+					[0].shown = false;
+				
+				
+				$('#chat-v2 .selector ul').animate({opacity: 0}, function () {
+					$(this).hide()
+				});
+				
+				channel			= $(this).data('channel');
+				real_channel	= channel;
+				
+								if(channel == 'r10') {
+					$('#chat-v2 #message').attr('maxlength', 500);
+				} else {
+					$('#chat-v2 #message').attr('maxlength', 60);
+				}
+								
+				$('#chat-v2 .messages .chat-message').hide();
+				
+				$.cookie('chatv2_channel', channel);
+				$('#chat-v2 .messages .chat-' + channel).show();
+				$('#chat-v2 .messages .chat-warn').show();
+				
+				$('#chat-v2 input[name=message]').focus();
+				resize_selector();
+			});
+	
+			$('#chat-v2 .selector-trigger').on('click', function () {
+				if(!this.shown) {
+					$('#chat-v2 .selector ul').show().animate({opacity: 1});
+					
+					this.shown	= true;
+				} else {
+					$('#chat-v2 .selector ul').animate({opacity: 0}, function () { $(this).hide() });
+					
+					this.shown	= false;			
+				}
+			});
+			if($.cookie('chatv2_channel')) {
+				var	current		= $.cookie('chatv2_channel');
+				var was_found	= false;
+				
+				$('#chat-v2 .selector ul li').each(function () {
+					var _		= $(this);
+					
+					if(_.data('channel') == current) {
+						_.trigger('click');
+						
+						was_found	= true;
+					}
+				});
+				
+				if(!was_found) {
+					$('#chat-v2 .selector ul li').each(function () {
+						var _		= $(this);
+						
+						if(_.data('channel') == 'village') {
+							_.trigger('click');
+						}						
+					});
+				}
+			} else {
+				$('#chat-v2 .selector ul li').each(function () {
+					var _		= $(this);
+					
+					if(_.data('channel') == 'village') {
+						_.trigger('click');
+					}						
+				});
+			}			
+		});
+				
+		var	__pvt_iv	= setInterval(function() {
+			__chat_socket.emit('pvt-query');
+		}, 2000)
+		var	__block_iv	= setInterval(function() {
+			__chat_socket.emit('blocked-query');
+		}, 2000)
+		$('#chat-v2 .title').on('click', function () {
+			if(parseInt($.cookie('chatv2_show'))) {
+				$('#chat-v2').animate({height: 52}, function () { $('#chat-v2 .chat-bg').hide(); });
+				$('.chat-pvt').animate({bottom: 22});
+				
+				$.cookie('chatv2_show', 0);
+			} else {
+				$('#chat-v2 .chat-bg').show();
+				
+				$('#chat-v2').animate({height: 421});
+				$('.chat-pvt').animate({bottom: 378});
+				$.cookie('chatv2_show', 1);
+			}
+			
+			resize_selector();
+		});
+		
+		$('#chat-v2 .auto-scroll').on('click', function () {
+			if(this.checked) {
+				$.cookie('chatv2_as', 1);
+			} else {
+				$.cookie('chatv2_as', 0);				
+			}
+		});
+		
+		if(!parseInt($.cookie('chatv2_show'))) {
+			$('#chat-v2').css('height', 52);
+			$('#chat-v2 .chat-bg').hide();
+		}
+		
+		if(parseInt($.cookie('chatv2_as'))) {
+			$('#chat-v2 .auto-scroll')[0].checked = true;
+		}
+	})();
+</script>
+<script type="text/javascript">
+head.js(
+	{ui:			"js/jquery/jquery.ui.js?c=1"},
+	//{ui:			"http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"},
+	{tabs:			"js/jquery.tabs.js"},
+	{tablefilter:	"js/jquery.uitablefilter.js"},
+	{index:			"js/index.js"},
+	//{social:		"js/social.js"},
+	//{maskedinput:	"js/jquery.maskedinput.js"},
+	{countdown:		"js/jquery.countdown.min.js"},
+	{numeric:		"js/jquery.numeric.js"},
+	{easing:		"js/jquery.easing.js"},
+	{booklet:		"js/jquery.booklet.js"},
+	{formcontrols:	"js/jquery.formcontrols.js"},
+	{spinner:		"js/jquery.smartspinner.js"}
+,'js/dojo_batalha_lutador.js?c=1344372633','js/inventario.js?c=1402500134'
+);
+	head.ready(function () {
+		$.extend($.ui.dialog.prototype, {
+		        'addbutton': function(buttonName, func) {
+		                var buttons = this.element.dialog('option', 'buttons');
+		                buttons[buttonName] = func;
+		                this.element.dialog('option', 'buttons', buttons);
+		        }
+		});
+		$.extend($.ui.dialog.prototype, {
+		        'removebutton': function(buttonName) {
+		                var buttons = this.element.dialog('option', 'buttons');
+		                delete buttons[buttonName];
+		                this.element.dialog('option', 'buttons', buttons);
+		        }
+		});
+		$(document).ready(function () {
+					});
+	});
+	$(document).ready(function(e) {
+		$('.flag img').css('opacity', .3).each(function() {
+			if($(this).data('lang') == 'br') {
+				$(this).css('opacity', 1);
+			}
+		}).on('click', function () {
+			var href		= location.href.replace(/(\?|&)lang=(.{2})/i, '');
+			location.href	= href + (href.indexOf('?') == -1 ? '?lang=' : '&lang=') + $(this).data('lang');
+		});
+	});
+	$(document).ready(function(e) {
+		$('.layout_change img').css('opacity', .3).each(function() {
+			if($(this).data('layout') == 'r10') {
+				$(this).css('opacity', 1);
+			}
+		}).on('click', function () {
+			var href		= location.href.replace(/(\?|&)layout=(.{2})/i, '');
+			location.href	= href + (href.indexOf('?') == -1 ? '?layout=' : '&layout=') + $(this).data('layout');
+		});
+	});
+</script>
+<script type="text/javascript">
+	function estudo_ninja() {
+		__d_bingo_book = $(document.createElement('DIV'));
+		$(document.body).append(__d_bingo_book);
+		$(__d_bingo_book).dialog({
+			title: 'Estudo Ninja',
+			modal: true,
+			width: 730,
+			height: 565,
+			resizable: false,
+			close: function () {
+				clearTimers();
+				__d_bingo_book.remove();
+			}
+		}).load('?acao=estudo_ninja');
+	}
+	function estudo_ninja_final() {
+		//if(confirm('Verifique se você respondeu todas as perguntas.\nAs perguntas que não forem respondidas serão ignoradas')) {
+			$.ajax({
+				url: '?acao=estudo_ninja_final',
+				type: 'post',
+				data: $('#f-estudo-ninja').serialize(),
+				success: function (e) {
+					eval(e);
+				}
+			});
+			clearTimeout(___ii);
+			clearTimers();
+		//}
+	}
+	__bingo_book_key = 'a997d784e362e873d50d39e50e1166c0';
+	head.ready(function () {
+		$(document).ready(function () {
+					});
+	});
+</script>
+</body>
+</html>

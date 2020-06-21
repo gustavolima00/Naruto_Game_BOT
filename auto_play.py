@@ -27,31 +27,30 @@ def make_browser():
     driver.get(url.HOME)
     return Browser(driver)
 
-def make_session():
-    return rb.start_session()
-
-def request_bot(email, password, **kwargs):
-    session = rb.start_session()
-    rb.dowload_captcha(session)
-    rb.show_image('captcha.png')
-    captcha = input('Insira o captcha e aperte enter: ')
-    rb.login(session, email, password, captcha)
-    characters = rb.get_characters(session)
+def start_play(email, password, interval, id=0):
+    session = rb.Session()
+    img_name = 'captcha_' + str(id)+ '.png'
+    session.download_captcha(img_name)
+    rb.show_image(img_name)
+    captcha = input('Insira o captcha de ' + img_name + ' e aperte enter: ')
+    session.login(email, password, captcha)
+    characters = session.get_characters()
     for c in characters:
-        rb.select_character(session, c)
-        rb.finish_mission(session)
-        if not 'get_fidelity' in kwargs or kwargs.get('get_fidelity'):
-            rb.get_fidelity(session)
-        if not 'train' in kwargs or kwargs.get('train'):
-            rb.train(session)
-        if not 'train_first_jutsu' in kwargs or kwargs.get('train_first_jutsu'):
-            rb.train_first_jutsu(session)
-            rb.train_first_jutsu(session)
-            rb.train_first_jutsu(session)
-        if not 'do_first_task' in kwargs or kwargs.get('do_first_task'):
-            rb.do_first_task(session)
-        if not 'do_first_mission' in kwargs or kwargs.get('do_first_mission'):
-            rb.do_first_mission(session)
+        session.select_character(c)
+        session.get_fidelity()
+        session.make_contest()
+        
+    while True:
+        for c in characters:
+            session.select_character(c)
+            session.finish_mission()
+            session.start_dojo_battle()
+            session.battle()
+            session.train_jutsus()
+            session.train()
+            session.do_first_task()
+            session.do_first_mission()
+        sleep(interval*60)
         
 
 def play_story_mode(browser):

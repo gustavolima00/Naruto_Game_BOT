@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="c9a1zh80SwyaBQewF16AyALFXNpXkZ-rh6km-s-aN4I" />
+<meta name="og:image" content="https://narutogame.com.br/favicon.ico" />
+
+  <title>Naruto Game - Esse é o seu jeito Ninja de ser</title>
+  <meta name="keywords" content="jogo de naruto, naruto game, game naruto, jogo naruto, naruto jogos online" />
+  <meta name="description" content="Crie seu personagem no jogo Naruto Game e participe online das aventuras RPG de Naruto com seus amigos" />
+<link href='https://www.facebook.com/narutogamebr' rel='author'/>
+<link href='https://plus.google.com/u/0/b/110764258523291224819/110764258523291224819' rel='me'/>
+<link href='https://twitter.com/narutogame' rel='me'/>
+<link href="css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="css/html.css" rel="stylesheet" type="text/css"/>
+<link rel="shortcut icon" href="https://narutogame.com.br/favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="js/head.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/tutorial.js"></script>
+<script type="text/javascript" src="js/global.js?c=1460403230"></script>
+<script src="js/socket.io.js"></script>
+
+<!-- POP-UP -->
+
+<script type="text/javascript">
+	var	socket	= io.connect('narutogame.com.br:2533');
+	socket.on('connect', function () {
+		socket.emit('set-language', {lang: 'br'});
+	});
+	socket.on('message', function (data) {
+		var	d	= $(document.createElement('DIV')).addClass('highlight-window');
+		var	m	= $(document.createElement('DIV')).addClass('highlight-text');
+		var	len	= $('.highlight-window').length;
+
+		m.html(data.message);
+		d.append(m);
+		$(document.body).append(d);
+		if(len) {
+			d.css({marginTop: len * (d.height() + 10)});
+		}
+		var	__iv	= setInterval(function () {
+			d.animate({opacity: 0}, function () {
+				d.remove();
+			});
+			clearInterval(__iv);
+		}, 7000);
+	});
+</script>
+<script type="text/javascript">
+	var __site		= "https://narutogame.com.br/";
+	var	__ec_site	= 'https://192.168.25.200/narutogame_r11/';
+	var	_strings		= [];
+	_strings['fechar']	= 'Fechar';
+	_strings['carregar_itens']	= 'Carregar Itens...';
+	_strings['g1']	= 'Você não pode utilizar esse item por enquanto!';
+	_strings['g2']	= 'Item de quest';
+	_strings['g3']	= 'Validade do item';
+	_strings['g4']	= 'Este item está indisponível por hoje, você já excedeu o limite de uso.';
+	_strings['g5']	= 'Você pode usar ainda';
+	_strings['g6']	= 'vezes hoje';
+	_strings['g7']	= 'Recupera';
+	_strings['g8']	= 'Requer';
+	_strings['g9']	= 'Intervalo de uso em batalha';
+	_strings['g10']	= 'faltando';
+
+</script>
+<!-- FIM POP-UP -->
+
+<script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=220419874734083";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div id="top-container">
+								<div id="background-topo" style="background-image:url(images/layout/topo-logado/62.jpg);"></div>
+				<div id="topo-info" style="background:url('https://narutogame.com.br/images/layout/topo-info2.png'); background-repeat: no-repeat;">
+			<div class="flag">
+				<div style="float: left; margin-left:5px"><img data-lang="br" src="https://narutogame.com.br/images/layout/br.png" alt="Naruto Game - Versão em Português"/></div>
+				<div style="float: left; margin-left:5px"><img data-lang="en" src="https://narutogame.com.br/images/layout/us.png" alt="Naruto Game - English Version"/></div>
+            </div>
+													<div id="duracao-logado" >
+					 					 <div class="amarelo" style="position: relative; padding-top: 40px; font-size:12px; padding-left: 26px;">
+					 	Encerra em: <b>67 dias</b><br />
+					 						 </div>
+
+                </div>
+								<div id="aviso-logado">
+					<p style="width: 220px; margin-left: 66px; margin-top: 18px; text-align: center">
+						Bem vindo ao Round Oficial 27!<br />Fique ligado na última  <a class="laranja" href="?secao=ler_noticia&id=373">Notícia!</a>
+					</p>
+				</div>
+
+												<div onclick="location.href='?secao=vantagens'" id="vip-logado" style="cursor: pointer; background-image:url(https://narutogame.com.br/images/layout/topo-vip.png)" >
+					<div style="float:left; font-size:11px; color:#6491a3; margin: 32px 0 0 190px;">
+						<span style="position: relative; top: -8px; font-size: 12px">
+							<a href="?secao=vantagens" title="Use seus créditos!" class="linkTopo">Créditos Vip: 31</a>
+						</span>
+					</div>
+				</div>
+				                <div id="logo-logado">
+                	<a href="https://narutogame.com.br"><img src="https://narutogame.com.br/images/layout/logo-logado.png" border="0" class="logo-ng-topo"/></a>
+				</div>
+									<div id="graduacao-logado">
+					<a href="?secao=graduacoes"><img src="https://narutogame.com.br/images/layout/graduacoes/1-2.png" border="0" /></a>
+						<p></p>
+					</div>
+									</div>
+
+					<div id="topo2">
+				<div id="menu-bg-overlay" style="background-image:url(images/layout/topo-logado/62.jpg);"></div>
+				<div id="menu-container">
+					<div id="menu-character-topo">
+						<div id="pIcones">
+							<!-- Reloginho -->
+							<div class="i" id="topClock">
+								<div class="t">
+									<b class="azul">Rotinas do Jogo</b><br /><br />
+																			<b class="azul">Healing: <span id="d-healing-timer"></span></b><br />
+										Recupera 20% dos seus atributos.<br />
+										<b class="azul">Missão NPC Vila: <span id="d-npc-vila-timer"></span></b><br />
+Tempo da finalização das missão de invasão.<br />
+<b class="azul">Cura do Guardião e Ranking Ninja: <span id="d-heal-npc-vila-timer"></span></b><br />
+Recupera 50% de todos os atributos do npc guardião e Atualiza o ranking de ninjas<br />
+<b class="azul">Ranking Equipe e Conquista: <span id="d-ranking1-eqp-timer"></span></b><br />
+Atualiza o ranking de equipes e conquista<br />
+<b class="azul">Ranking Organização: <span id="d-ranking-org-timer"></span></b><br />
+Atualiza o ranking de organização<br />
+<b class="azul">Bijuu: <span id="d-bijuu-timer"></span></b><br />
+Novas bijuus são sorteadas e as do outro dia deletadas<br />
+<b class="azul">Diversas Rotinas: <span id="d-midnight1-timer"></span></b><br />
+Libera o treino de atributos e de jutsus<br />
+Limpa os Tickets de Hospital, Histórico de Combates e Livro de Registros.<br />
+Limpa o exp diário ganho nas equipes<br />
+Renova os combates npcs diários e os contadores de treino dos duelos <br />
+Libera a Diplomacia para votação ( Somente na Sexta-feira )<br/>
+<b class="azul">Missões Especiais e Bingo Book: <span id="d-ranking2-eqp-timer"></span></b><br />
+Libera as missões especiais ( Somente nos dias 1 e 15 de todos os meses )<br />
+Novos Alvos para Ninjas no Bingo Book ( Somente na Segunda-feira )<br />									<script>
+										cronTimer(0, 0, 24, 0, 2, 'd-healing-timer');
+										cronTimer(0, 16, 0, 0, 24, 'd-npc-vila-timer');
+										cronTimer(13, 16, 0, 0, 24, ['d-ranking1-eqp-timer', 'd-ranking2-eqp-timer','d-ranking3-eqp-timer']);
+										cronTimer(1, 16, 0, 0, 4, 'd-ranking-org-timer');
+										cronTimer(8, 46, 0, 0, 24, ['d-bijuu-timer', 'd-bijuu-timer2']);
+										cronTimer(8, 46, 0, 0, 24, ['d-bijuu-timer', 'd-bijuu-timer3']);
+										cronTimer(1, 16, 0, 0, 2, 'd-heal-npc-vila-timer');
+										cronTimer(9, 16, 0, 0, 24, ['d-midnight1-timer','d-midnight2-timer' ]);
+									</script>
+								</div>
+							</div>
+							<!-- Reloginho -->
+														<div id="topAdvantages">
+
+							
+								<div class="i">
+                                <img src="https://narutogame.com.br/images//layout/topo-logado/icones/kage.png" border="0" width="24" />
+									 <div class="t">
+									 	Sem vantagens vips ou promoções no momento.									 </div>
+								</div>
+																<!-- VANTAGENS VIPS -->
+								</div>
+								<!-- Reloginho -->
+																<div id="topFidelity">
+									<div class="i">
+									   <img src="https://narutogame.com.br/images/layout/icones/gift2.png" border="0" width="20" />
+										<div class="t">
+											<b class="azul">Fidelidade Ninja</b><br />
+											Você já recebeu seu prêmio hoje, volte amanhã!										</div>
+									</div>
+								</div>
+							<!-- Reloginho -->
+							</div>
+							<!-- Friends -->
+														<div id="topFriends">
+								<a href="?secao=lista_amigos"><img src="https://narutogame.com.br/images/layout/icones/friend.png" border="0" width="18" style="position:relative; top: 4px" /></a>
+															</div>
+							<!-- Friends -->
+							<!-- Mensageiro -->
+							<div id="topMessages">
+																						<a href="?secao=mensagens"><img src="https://narutogame.com.br/images/layout/topo-logado/icones/mensageiro2.png" border="0" /></a>
+														</div>
+							<!-- Mensageiro -->
+							<!-- Logout -->
+							<div id="topLogout">
+																									<a href="javascript:logoff()"><img src="https://narutogame.com.br/images/layout/topo-logado/icones/logout.png" height="20" alt="Logout"/></a>
+															</div>
+							<!-- Logout -->
+					</div>
+					<div id="informacoes">
+                    						<div id="level-start">
+							<span>LVL</span>
+							9						</div>
+						<div id="barra_exp">
+														
+				<div class="barra-exp-topo barra-exp-topo-exp">
+					<div class="fill" style="width: 100px; background-image: url(https://narutogame.com.br/images/layout/barras_topo/barra_topo_exp_fill.png)"><span>EXP: 4342/8100</span>
+					<img src="https://narutogame.com.br/images/layout/barras_topo/barra_exp_brilho.png" />
+					</div>
+				</div>						</div>
+						<div id="level-end">
+							<span>LVL</span>
+							10						</div>
+						<div class="ryou" id="cnPRYt">8829						</div>
+					</div>
+					<div id="icones">
+						<div class="miniIcones">
+							<div class="icon hp"></div>
+							<div class="iconeTxt" id="cnPHPt">
+								222/222								<div class="barra-exp-topo"><div class="fill" style="width: 57px; background-image: url(https://narutogame.com.br/images/layout/barras_topo/barra_topo_vida_fill.png)"></div></div>							</div>
+						</div>
+						<div class="miniIcones">
+							<div class="icon cha"></div>
+							<div class="iconeTxt" id="cnPSPt">
+								411/411								<div class="barra-exp-topo"><div class="fill" style="width: 57px; background-image: url(https://narutogame.com.br/images/layout/barras_topo/barra_topo_chakra_fill.png)"></div></div>							</div>
+						</div>
+						<div class="miniIcones">
+							<div class="icon sta"></div>
+							<div class="iconeTxt" id="cnPSTAt">
+								155/155								<div class="barra-exp-topo"><div class="fill" style="width: 57px; background-image: url(https://narutogame.com.br/images/layout/barras_topo/barra_topo_stamina_fill.png)"></div></div>							</div>
+						</div>
+					</div>
+					<ul id="loggedin-menu">
+																				<li class="category">
+								<a class="category-data ">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/3.png">
+									Usuário								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=usuario_dados">Meus dados</a></li>
+																					<li><a href="?secao=mensagens">Mensageiro</a></li>
+																					<li><a href="?secao=vantagens">Vantagens VIP</a></li>
+																					<li><a href="?secao=temas">Temas Vips</a></li>
+																					<li><a href="?secao=jogador_vip">Jogador VIP</a></li>
+																					<li><a href="?secao=gasto_vip">Compras com Créditos VIP</a></li>
+																					<li><a href="?secao=atributos">Fórmulas do Jogo</a></li>
+																					<li><a href="?secao=indique">Indique seus amigos</a></li>
+																					<li><a href="?secao=senha_trocar">Trocar Senha</a></li>
+																					<li><a href="?secao=personagem_selecionar">Trocar Personagem</a></li>
+																					<li><a href="?secao=suporte"><b>Suporte</b></a></li>
+																					<li><a href="javascript:logoff()">Logout</a></li>
+																			</ul>
+															</li>
+																				<li class="category">
+								<a class="category-data ">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/4.png">
+									Personagem								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=personagem_status"><b>Status</b></a></li>
+																					<li><a href="?secao=arvore_talento">Talentos Ninja</a></li>
+																					<li><a href="?secao=estudo_ninja">Estudo Ninja</a></li>
+																					<li><a href="?secao=objetivos">Objetivos</a></li>
+																					<li><a href="?secao=conquistas">Conquistas</a></li>
+																					<li><a href="?secao=historico">Histórico Ninja</a></li>
+																					<li><a href="?secao=recompensa_log">Recompensas</a></li>
+																					<li><a href="?secao=amigos">Lista de Amigos</a></li>
+																					<li><a href="?secao=lista_amigos">Localizador de Amigos</a></li>
+																					<li><a href="?secao=fidelidade">Fidelidade Ninja</a></li>
+																			</ul>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/7_disabled.png">
+									Academia								</a>
+															</li>
+																				<li class="category">
+								<a class="category-data ">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/16.png">
+									Sensei								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=tutorial">Tutorial</a></li>
+																					<li><a href="?secao=sensei">Sensei</a></li>
+																					<li><a href="?secao=desafios">Desafios</a></li>
+																			</ul>
+															</li>
+																				<li class="category">
+								<a class="category-data ">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/1-11.png">
+									Vila Atual								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=missoes_espera">Status da Missão</a></li>
+																					<li><a href="?secao=vila">Status da Vila</a></li>
+																					<li><a href="?secao=missoes">Missões</a></li>
+																					<li><a href="?secao=vila_eventos">Eventos</a></li>
+																					<li><a href="?secao=vila_objetivos"><b>Objetivos</b></a></li>
+																					<li><a href="javascript:bingo_book_vila()">Bingo Book</a></li>
+																					<li><a href="?secao=vila_forum">Fórum</a></li>
+																			</ul>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/12_disabled.png">
+									Combates								</a>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/6_disabled.png">
+									Equipe								</a>
+															</li>
+																				<li class="category">
+								<a class="category-data disabled">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/5_disabled.png">
+									Organização								</a>
+															</li>
+																				<li class="category">
+								<a class="category-data ">
+									<img src="https://narutogame.com.br/images/layout/categorias_topo/9.png">
+									Ranking								</a>
+																	<ul class="submenu">
+																					<li><a href="?secao=rank_ninjas">Ninjas</a></li>
+																					<li><a href="?secao=rank_sensei">Sensei</a></li>
+																					<li><a href="?secao=rank_4x4">4x4</a></li>
+																					<li><a href="?secao=rank_batalhas_status">Combates</a></li>
+																					<li><a href="?secao=rank_equipes">Equipes</a></li>
+																					<li><a href="?secao=rank_guilds">Organizações</a></li>
+																					<li><a href="?secao=rank_vilas">Vilas</a></li>
+																					<li><a href="?secao=rank_conquistas">Conquistas</a></li>
+																					<li><a href="?secao=rank_estudo_ninja">Estudo Ninja</a></li>
+																					<li><a href="?secao=rank_guerra">Guerra Ninja</a></li>
+																			</ul>
+															</li>
+																			<li class="category inventory-container">
+							<a class="category-data">
+								<img src="https://narutogame.com.br/images/layout/topo-logado/icones/bag.png" class="inventory-trigger" alt="Sua mochila ninja" border="0" />
+								Bolsa							</a>
+						<ul>
+								<li>
+									<div data-sell-confirm="Você irá vender %item e irá ganhar RY$ %price.<br />Confirmar venda?" class="arrow_box t inventory-data" data-default="Carregando Itens..."></div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		    </div>
+	<div id="conteudo">
+		<div id="pagina" style="padding-top: 70px">
+			<div id="colunas" >
+									<div id="menu_fundo"></div>
+				<div id="esquerda">
+	<div id="menu_repete" style="padding-top: 60px">
+							<div>
+				<script type="text/javascript">
+	function doPlayerTitulo() {
+		$.ajax({
+			url: "?acao=personagem_status&o=1",
+			type: "post",
+			data: {v: $('#sPlayerTitulo').val()}
+		});
+	}
+	
+	function doPersonagemImagem() {
+		var d = $(document.createElement("DIV"));
+
+		d.load("?acao=personagem_imagem");
+		d.dialog({
+			width: 750,
+			height: 510,
+			title: 'Escolha a nova imagem do seu personagem',
+			modal: true,
+			close: function () {
+				d.remove();
+			}
+		});
+	}
+	
+	function doPersonagemImagemDo(i, tema, comprado) {
+		var	title	= '';
+		
+		if(tema && !comprado) {
+			var msg	= "<img width='722' src='https://narutogame.com.br/images/layout/temas/#id.jpg' />".replace('#id', tema);
+		} else {
+			var msg	= "Deseja alterar a imagem do seu personagem para escolhida ?";
+		}
+		
+		var win = jconfirm(msg, title, function () {
+			$.ajax({
+				url: '?acao=personagem_imagem',
+				type: 'post',
+				data: {id: i, personagem_imagem_key: "94a896f2b000655b2ec8590a83ee6da1"},
+				dataType: 'script',
+				success: function () {
+					location.reload();
+				}
+			});
+		}, null, (tema && !comprado) ? 750 : 300);
+	}
+</script>
+<div id="character-data">
+	 	<div id="character-image"><img src="https://narutogame.com.br/images/layout/profile/62/1.png" /></div>
+	<div id="character-info">
+		<div class="name">Oxc</div>
+		<div class="headline"></div>
+	</div>
+	<div id="character-attributes">
+		<!-- Bijuus -->
+				
+		<!-- Espadas nevoa -->
+				
+		<!-- Clã -->
+					<div class="box">
+				<div class="i">
+					<a href="?secao=clas"><img src="https://narutogame.com.br/images/layout/topo-logado/icones/clas/6.png" id="iBag" border="0" /></a>
+					<div class="t">    
+						  <b class="azul">Yamanaka</b><br /><br />
+						  <b>Você possui o Clã Yamanaka, para maiores informações <a href="?secao=clas" class="azul">clique aqui</a></b><br /><br />
+					</div>
+				</div>
+			</div>
+					
+		<!-- Selo -->
+					
+		<!-- Invocação -->
+					
+		<!-- Elemento -->
+					  
+		<!-- Portão -->   
+					 
+		<!-- Sennin -->           
+				<div class="category inventory-container box" style="float: right; margin-right: 5px;">
+			<a class="category-data">
+				<img src="https://narutogame.com.br/images/layout/topo-logado/icones/bag2.png" class="inventory-trigger" alt="Sua mochila ninja" border="0" />
+			</a>
+			<div data-sell-confirm="Você irá vender %item e irá ganhar RY$ %price.<br />Confirmar venda?" class="arrow_box t inventory-data" data-default="Carregando Itens..." style="margin-left: -200px;"></div>
+		</div>
+
+		<div class="break"></div>
+	</div>
+		<div id="character-status">
+		<input class="button" type="button" onclick="doPersonagemImagem()" value="Trocar Imagem" /><br /><br />
+		<div class="layout_change">
+			<b>Layout Atual</b><br />
+			<div style="float: left; margin-left:5px"><img data-layout="r8" src="https://narutogame.com.br/images/layout/layout_r8.jpg" alt="Naruto Game - Layout Azul do Round 8" width="105"/></div>
+			<div style="float: left; margin-left:5px"><img data-layout="r10" src="https://narutogame.com.br/images/layout/layout_r10.jpg" alt="Naruto Game - Layout Padrão do Round 10" width="105"/></div>
+		</div>	
+		<b>Título: </b><br />
+		<select name="sPlayerTitulo" id="sPlayerTitulo" onchange="doPlayerTitulo()" style="width:190px">
+			<option value="MA%3D%3D">Nenhum(a)</option>
+														<option  value="Nzg3Mzcy">Genin</option>
+											<option  value="Nzg3Mzcz">Ninja Treinado</option>
+					</select>
+		<p>
+			<b>Classe: </b>
+			Ninjutsu		</p>
+		<p>
+			<b>Vila Oculta: </b> <a href="?secao=vila">Folha</a>
+		</p>
+			
+		<p>
+			<b>Profissão:</b> <a href="?secao=profissao">-</a>
+		</p>
+		<p>
+			<b>Level:</b> 9		</p>
+		<p>
+			<b>Poder Ninja: 15800</b>
+		</p>
+		<!--
+		<p>
+			<b>Experiência Ninja: 940</b>
+		</p>
+		-->
+									   
+		<p>
+			<b>Qtd. dias no round: </b> 9		</p>
+		<p>
+			<b>Ranking (Vila): </b>585&deg;		</p>
+		<p>
+			<b>Ranking (Geral): </b>1934&deg;		</p>
+		<p>
+			<b>Score: </b>15108		</p>
+		<p>
+			<b>Pontos de Conquistas: </b><a href="?secao=conquistas">110</a>
+		</p>
+		<p>
+			<b>Equipe: </b>Nenhum(a)		</p>
+		<p>
+			<b>Organização: </b>Nenhum(a)		</p>		
+	</div>
+	<!--<div style="position: relative; width: 120px; height: 60px; left: 58px; top: 15px;">
+		<div style="float: left">
+			 <div class="fb-like" data-href="http://www.facebook.com/narutogamebr" data-send="false" data-layout="box_count" data-width="70" data-show-faces="false"></div>
+		</div>
+		<div style="float: left; padding-left: 10px">
+			<div class="g-plusone" data-size="tall" data-href="http://narutogame.com.br"></div>
+		</div>
+	</div>-->
+	</div>
+<br />
+				<div class="break"></div>
+			</div>
+													<div class="titulos-menu"><img src="https://narutogame.com.br/images/layout/menu-titulos/missao_atual.png" /></div>
+				<ul>
+											<li><a href="?secao=missoes_espera">Status da Missão</a></li>
+																																		</ul>
+														<!-- Evento Global -->
+					
+
+			<!-- Evento Vila -->
+																																								<div class="titulos-menu"><img src="https://narutogame.com.br/images/layout/menu-titulos/principal.png" alt="principal.png"/></div>
+			<ul>
+															<li><a href="?secao=home">Home</a></li>
+											<li><a href="?secao=manual">Manual</a></li>
+											<li><a href="?secao=halldafama_r26">Hall da Fama</a></li>
+											<li><a href="?secao=halldafama_equipe_r26">Hall da Fama - Equipes</a></li>
+											<li><a href="?secao=halldafama_guild_r26">Hall da Fama - Organizações</a></li>
+											<li><a href="?secao=divulgue_nos">Divulgue-nos</a></li>
+											<li><a href="?secao=fale_conosco">Fale Conosco</a></li>
+											<li><a href="?secao=calculadora">Calculadora</a></li>
+												</ul>
+						
+				
+	</div>
+</div>
+<div id="direita">//<script>
+location.href='?secao=negado&byrule=section&source=dojo';
+//</script>

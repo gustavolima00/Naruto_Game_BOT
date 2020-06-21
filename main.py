@@ -1,14 +1,18 @@
-from selenium import webdriver
-from narutogame import Browser
 from time import sleep
-from auto_play import *
+from auto_play import get_accounts, start_play
 import sys
+import requestbot as rb
+from threading import Thread
 
 accounts = get_accounts()
-for key in accounts:
-    request_bot(*key, do_first_task=False, get_fidelity=False)
-    b = make_browser()
-    b.login(*key)
-    #input('Escreva o captcha, logue e aperte enter...')
-    #play_story_mode(b)
-    
+i = 0
+interval = 10
+try:
+    i = int(sys.argv[1])-1
+except: 
+    pass
+try:
+    interval = int(sys.argv[2])
+except: 
+    pass
+start_play(*accounts[i], interval, i+1)
